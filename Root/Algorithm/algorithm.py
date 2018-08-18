@@ -4,44 +4,51 @@ import pickle
 import numpy as np
 import matplotlib.pyplot as plt
 
-from data import DataHolder, L_SET
-from model import Model
-from utils import QUESTIONS, plotLLmatrix, unfold_sum_matrix
-
-MODELS_PATH = "models/"
+from data import DataHolder, L_SET, QUESTIONS
+from model import Model, MODELS_PATH
+from utils import plotLLmatrix, plotKLmatrix, unfold_sum_matrix, PLOTS_PATH, plot_confusion
 
 
 def train_new_model(data_obj):
-    U, P, V = data_obj.get_data()
     the_model = Model()
 
     # Train model
-    train_params = the_model.train(U, P, V)
+    print("Training the model...")
+    train_params = the_model.train(data_obj)
 
+    # Save model
     timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
-    with open((MODELS_PATH + "model-" + timestamp + ".npy"), 'wb') as f:
-        pickle.dump((train_params, the_model, the_model.d), f, pickle.HIGHEST_PROTOCOL)
+    fname = MODELS_PATH + "model-" + timestamp + ".pkl"
+    print("Saving model in " + fname)
+    with open(fname, 'wb') as f:
+        pickle.dump((the_model.train_params, the_model.d.get_value()), f, pickle.HIGHEST_PROTOCOL)
 
-    err_vec = train_params['training_loss']
-    plt.semilogy(err_vec[0:3])
+    err_vec = the_model.train_params['training_loss']
+    plt.semilogy(err_vec)
+    plt.show()
     return the_model
 
 
 def print_distance_matrices(data_obj, the_model):
-    freq_abs, freq_party = data_obj.get_frequencies()
+    party_names = data_obj.party_names
     full_d = the_model.get_full_d()
     N = len(full_d)
+
+    print("Obtaining frequencies...")
+    freq_abs, freq_party = data_obj.get_frequencies()
 
     scores = np.zeros_like(full_d)
     for j in range(N):
         scores[j] = np.multiply(freq_abs[j], full_d[j])
 
+    print("Plotting matrices...")
     letters_per_line = 27
     _max_D = np.amax(abs(full_d))
     # _max_s = np.amax(abs(scores))
 
+    fig3, tot_axes = plt.subplots(N, 7, figsize=(15, 2 * N))
     for j in range(N):
-        fig3, axes = plt.subplots(1, 7, figsize=(20, 3))
+        axes = tot_axes[j]
         i = 0
 
         # Distance matrices
@@ -61,43 +68,58 @@ def print_distance_matrices(data_obj, the_model):
 
         # Middle scores (for verifying which weights are being significative)
         plotLLmatrix(axes[i], np.multiply(full_d[j], freq_abs[j] / np.max(freq_abs[j])), vmax=_max_D)
-        axes[i].set(title=QUESTIONS[j][3 * letters_per_line:4 * letters_per_line])
+        axes[i].set(title=QUESTIONS[j][3 * letters_per_line:4 * letters_per_line] + " " + str(j))
         i += 1
 
         # Party frequencies
-        axes[i].xaxis.set(ticks=range(L), ticklabels=L_SET)
-        axes[i].yaxis.set(ticks=range(K), ticklabels=party_info)
-        cax = axes[i].imshow(freq_party[j], cmap='Blues', vmin=0)  # , vmax=M)
+        plotKLmatrix(axes[i], freq_party[j], party_names)
         i += 1
 
         # Party frequencies (per-party)
-        axes[i].xaxis.set(ticks=range(L), ticklabels=L_SET)
-        axes[i].yaxis.set(ticks=range(K), ticklabels=party_info)
         tot_party = np.sum(freq_party[j], axis=1)
-        cax = axes[i].imshow(freq_party[j] / tot_party[:, None], cmap='Blues', vmin=0)  # , vmax=M)
+        plotKLmatrix(axes[i], freq_party[j] / tot_party[:, None], party_names)
         i += 1
 
         # Party answers
-        cax = axes[i].imshow(P[:, j, :], cmap='Blues')
-        axes[i].xaxis.set(ticks=range(len(L_SET)), ticklabels=L_SET)
-        axes[i].yaxis.set(ticks=range(K), ticklabels=party_info)
+        plotKLmatrix(axes[i], data_obj.P[:, j, :], party_names)
         i += 1
 
-        fig3.savefig("pesos_matrices_" + str(j) + ".jpg")
+    plt.tight_layout()
+    fig3.savefig(PLOTS_PATH + "pesos_matrices_" + the_model.name + ".png")
+    plt.show()
+
+
+def print_weights(the_model):
+    full_d = the_model.get_full_d()
+    N = len(full_d)
+    # full_d = np.array([unfold_matrix(el) for el in d_init])
+    fig, ax = plt.subplots(figsize=(10, 3))
+    ax.bar(range(N), [np.linalg.norm(el) for el in full_d])
+   # ax.set(title="Relative weights of the issue questions", xlabel="Issue question")
+    ax.yaxis.grid()
+    ax.xaxis.set(ticks=range(30), ticklabels=range(1,31))
+    fig.savefig(PLOTS_PATH + "weights" + the_model.name + ".eps", format="eps")
+    plt.show()
 
 
 def main():
     data_obj = DataHolder()
     # data_obj.get_random_accuracy()
 
-    # the_model = train_new_model(data_obj)
-    # the_model = Model(file_name="without_weights.pickle")
-    the_model = Model(file_name="Mendez")
+    # our_model = train_new_model(data_obj)
+    our_model = Model(file_name="20180817-150608")
+    # mendez_model = Model(file_name="Mendez")
 
-    # the_model.get_confusion_matrix(data_obj)
-    # the_model.get_weighted_mean_rank(data_obj)
+    # print(our_model.get_accuracy(data_obj, "test"), mendez_model.get_accuracy(data_obj, "test"))
 
-    print_distance_matrices(data_obj, the_model)
+    # our_model.get_rank_info(data_obj, "test")
+    # mendez_model.get_rank_info(data_obj, "test")
+
+    # our_model.get_confusion_matrices(data_obj, "train")
+
+    #print_distance_matrices(data_obj, our_model)
+    print_weights(our_model)
+
 
 if __name__ == "__main__":
     main()

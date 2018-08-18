@@ -4,37 +4,6 @@ from data import L_SET
 
 PLOTS_PATH = "plots/"
 
-QUESTIONS = ["Spain should drop the Euro as a currency",
-             "A single member state should be able to block a treaty change, even if all the other members states agree to it",
-             "The right of EU citizens to work in Spain should be restricted",
-             "There should be a common EU foreign policy even if this limits the capacity of Spain to act independently",
-             "The EU should redistribute resources from richer to poorer EU regions",
-             "Overall, EU membership has been a bad thing for Spain",
-             "EU treaties should be decided by the Cortes Generales rather than by citizens in a referendum.",
-             "To address financial crises, the EU should be able to borrow money just like states can",
-             "Free market competition makes the health care system function better",
-             "The number of public sector employees should be reduced",
-             "The state should intervene as little as possible in the economy",
-             "Wealth should be redistributed from the richest people to the poorest",
-             "Cutting government spending is a good way to solve the economic crisis",
-             "It should be easy for companies to fire people",
-             "External loans from institutions such as the IMF are a good solution to crisis situations.",
-             "Protecting the environment is more important than fostering economic growth",
-             "Immigrants must adapt to the values and culture of Spain",
-             "Restrictions on citizen privacy are acceptable in order to combat crime",
-             "To maintain public order, governments should be able to restrict demonstrations",
-             "Less serious crimes should be punished with community service, not imprisonment",
-             "Same sex couples should enjoy the same rights as heterosexual couples to marry",
-             "Women should be free to decide on matters of abortion",
-             "The recreational use of cannabis should be legal",
-             "Islam is a threat to the values of Spain",
-             "The government is making unnecessary concessions to ETA",
-             "The Church enjoys too many privileges",
-             "The process of territorial decentralisation has gone too far in Spain",
-             "Citizens should directly elect their candidates through primary elections",
-             "The possibility of independence for an Autonomous Community should be recognized by the Constitution			",
-             "Spain should toughen up its immigration policy"]
-
 
 def unfold_matrix(D_w):
     '''Gets the 13 independent parameters of the folded matrix and generate the double-symmetry matrix.
@@ -79,7 +48,7 @@ def unfold_sum_matrix(mat):
     return temp_mat2
 
 
-def plotLLmatrix(ax, data, vmax=None, cmap='seismic'):
+def plotLLmatrix(ax, data, vmax=None, cmap='bwr'):
     L = len(L_SET)
     if vmax is not None:
         cax = ax.imshow(data, cmap=cmap, vmin=-vmax, vmax=vmax)
@@ -87,3 +56,21 @@ def plotLLmatrix(ax, data, vmax=None, cmap='seismic'):
         cax = ax.imshow(data, cmap=cmap)
     ax.xaxis.set(ticks=range(L), ticklabels=L_SET)
     ax.yaxis.set(ticks=range(L), ticklabels=L_SET)
+    return cax
+
+
+def plotKLmatrix(ax, data, party_names):
+    K, L = len(party_names), len(L_SET)
+    ax.xaxis.set(ticks=range(L), ticklabels=L_SET)
+    ax.yaxis.set(ticks=range(K), ticklabels=party_names)
+    cax = ax.imshow(data, vmin=0, cmap='Blues')  # , vmax=M)
+
+
+def plot_confusion(ax, conf, title, party_names):
+    K = len(party_names)
+    ax.xaxis.set(ticks=range(K), ticklabels=party_names)  # , ticks_position="top", label_position="top")
+    ax.set_xticklabels(party_names, rotation=90)
+    ax.yaxis.set(ticks=range(K),
+                 ticklabels=party_names)  # , ticks_position="right", label_position="right")
+    ax.set(xlabel="Recommendation", ylabel="Voting intention", title=title)
+    cax = ax.imshow(100 * conf, cmap='Blues')  # , vmin=0, vmax=100)

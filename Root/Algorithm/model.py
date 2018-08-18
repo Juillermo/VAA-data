@@ -1,16 +1,21 @@
 import pickle
 
 import numpy as np
+from sklearn.metrics import f1_score
 import theano
 import theano.tensor as T
 import matplotlib.pyplot as plt
 
-from utils import unfold_matrix, PLOTS_PATH
+from data import RANDOM_STATE, QUESTIONS
+from utils import unfold_matrix, PLOTS_PATH, plot_confusion
+
+MODELS_PATH = "models/"
 
 
 class Model:
-    def __init__(self, n_questions=30, file_name=None):
+    def __init__(self, n_questions=len(QUESTIONS), file_name=None):
         self.N = n_questions
+        self.train_params = None
 
         # Tensor variables
         self.u = None  # user profiles tensor
@@ -22,15 +27,9 @@ class Model:
         self.predict = None
         self.get_latent = None
 
+        # Initialize model
         if file_name is not None:
-            if file_name != "Mendez":
-                self.name = "ours"
-                with open('data/' + file_name, 'rb') as f:
-                    # w_init, d_init = pickle.load(f)
-                    d_raw = pickle.load(f, encoding='latin1')
-                    d_init = d_raw  # .get_value()
-                print("Weights of the model loaded from file " + file_name)
-            else:
+            if file_name == "Mendez":
                 self.name = "Mendez"
                 # TODO: Not working properly, problem with No Opinions
                 d_init = np.zeros((self.N, 13))
@@ -44,8 +43,13 @@ class Model:
                 d_init = d_init
                 print("Weights of the model by Mendez's hybrid matrix:")
                 print(np.array(unfold_matrix(d_init[0])))
+            else:
+                self.name = file_name
+                with open(MODELS_PATH + "model-" + file_name + ".pkl", 'rb') as f:
+                    self.train_params, d_init = pickle.load(f)
+                print("Weights of the model loaded from file " + file_name)
         else:
-            self.name = None
+            self.name = "new"
             print("Weights of the model randomly initialized")
             d_init = np.random.randn(self.N, 13)  # 13 independent weights in the bi-symmetrical distance matrix
 
@@ -91,19 +95,21 @@ class Model:
         self.predict = theano.function(inputs=[self.u, self.p], outputs=self.s)
         self.get_latent = theano.function(inputs=[self.u, self.p], outputs=q)
 
-    def train(self, U, P, V):
-        M = len(U)
+    def train(self, data_obj):
+        U_train, P_train, V_train = data_obj.get_training_data()
+        M = len(U_train)
 
         # Training parameters
-        training_steps = 8000
+        training_steps = 4000
         lambda0 = 0.01  # regularization parameter
         mu = 1  # learning rate
 
+        print("Building training functions...")
         v = T.dmatrix("v")
         # Error function, cost and gradient
         err = T.nnet.categorical_crossentropy(self.s, v)
         # cost = err.mean() + lambda0 * ((w ** 2).sum() + (d ** 2).sum())
-        cost = err.mean() + lambda0 * (self.d ** 2).sum()
+        cost = err.mean() + lambda0 * (self.d ** 2).sum()  # T.sum(abs(self.d))#
         # gw, gd = T.grad(cost, [w, d])
         gd = T.grad(cost, self.d)
 
@@ -118,41 +124,49 @@ class Model:
         sample_every = 5
         err_vec = []
         acc_vec = []
-        try:
-            v_max = np.argmax(V, axis=1)
 
+        v_max = np.argmax(V_train, axis=1)
+        print("Iter  Logloss  Accuracy")
+        try:
             for i in range(training_steps):
-                pred, error = train(U, P, V)
+                pred, error = train(U_train, P_train, V_train)
                 if not i % sample_every:
                     err_vec.append(error.mean())
 
-                    p_max = np.argmax(self.predict(U, P), axis=1)
+                    p_max = np.argmax(self.predict(U_train, P_train), axis=1)
                     acc = sum(v_max == p_max) / float(M)
 
                     acc_vec.append(acc)
 
-                    print("{:d}, {:.5f}, {:.5f}".format(i, err_vec[i], acc))
+                    print("{:4d}, {:.5f}, {:.5f}".format(i, err_vec[i // sample_every], acc))
+        except KeyboardInterrupt:
+            print("Stopping training by user request...")
 
-        finally:
+        print("Training completed")
 
-            print("Final model:")
-            # print(w.get_value())
-            print(self.d.get_value())
-            print("target values for D:")
-            print(V)
-            print("prediction on D:")
-            print(self.predict(U, P))
+        self.train_params = {"training_loss": err_vec, "training_accuracy": acc_vec, "iterations": i,
+                             "random_state": RANDOM_STATE}
 
-            return {"training_loss": err_vec, "training_accuracy": acc_vec, "iterations": i}
+        acc, f1 = self.get_accuracy(data_obj, "test")
+        print("Performance on test set: accuracy {:.5f}, f1 score {:.5f}".format(acc, f1))
 
-    def get_confusion_matrix(self, data_obj):
-        U, P, V, party_names = data_obj.get_data()
+    def get_accuracy(self, data_obj, split="all"):
+        U, P, V = data_obj.get_data(split)
+        M = len(U)
+        v_max = np.argmax(V, axis=1)
+        p_max = np.argmax(self.predict(U, P), axis=1)
+        acc = sum(v_max == p_max) / float(M)
+        f1 = f1_score(v_max, p_max, average='weighted')
+        return acc, f1
+
+    def get_confusion_matrices(self, data_obj, split="all"):
+        U, P, V = data_obj.get_data(split)
+        party_names = data_obj.party_names
         M, K = len(U), len(P)
 
         v_max = np.argmax(V, axis=1)
         p_max = np.argmax(self.predict(U, P), axis=1)
-        acc = sum(v_max == p_max) / float(M)
-        print("Accuracy:", acc)
+        print("Accuracy({:s}): {:.5f}".format(split, sum(v_max == p_max) / float(M)))
 
         conf = np.zeros((K, K))
         for i in range(M):
@@ -164,7 +178,7 @@ class Model:
         for _ in conf_names:
             confs.append(conf.copy())
 
-        fig3, ax3 = plt.subplots(1, len(conf_names), figsize=(20, 5))
+        # fig3, ax3 = plt.subplots(1, len(conf_names), figsize=(20, 5))
         for i, el in enumerate(conf_names):
             conf = confs[i]
             for k in range(K):
@@ -175,26 +189,29 @@ class Model:
                 elif i == 3:
                     conf = 2 * confs[1] * confs[2] / (confs[1] + confs[2])
 
-            ax3[i].xaxis.set(ticks=range(K), ticklabels=party_names)  # , ticks_position="top", label_position="top")
-            ax3[i].set_xticklabels(party_names, rotation=90)
-            ax3[i].yaxis.set(ticks=range(K),
-                             ticklabels=party_names)  # , ticks_position="right", label_position="right")
-            ax3[i].set(xlabel="Max recommendation", ylabel="Voting intention", title=el)
-            cax = ax3[i].imshow(100 * conf, cmap='Blues')  # , vmin=0, vmax=100)
+            # plot_confusion(ax3[i], conf, title=el, party_names=party_names)
 
-        fig3.savefig(PLOTS_PATH + self.name + "_confusion_matrices.eps")
-        fig3.show()
+        # fig3.savefig(PLOTS_PATH + self.name + "_confusion_matrices.eps")
+        # fig3.show()
+        return confs
 
-    def get_weighted_mean_rank(self, data_obj):
-        U, P, V, _ = data_obj.get_data()
-        ranks = -self.predict(U, P)
-        for i, pred in enumerate(ranks):
+    def get_rank_info(self, data_obj, split="all"):
+        U, P, V = data_obj.get_data(split=split)
+
+        all_ranks = -self.predict(U, P)
+        for i, pred in enumerate(all_ranks):
             pred = pred.argsort()
-            ranks[i, pred] = np.arange(len(pred))
+            all_ranks[i, pred] = np.arange(len(pred)) + 1  # Due to index mismatch
 
-        mean_rank = np.sum(ranks * V) / len(ranks) + 1
-        print(mean_rank)
-        return mean_rank
+        ranks = all_ranks * V
+
+        mean_rank = np.sum(ranks) / len(ranks)
+        print("Mean rank ({:s}): {:.5f}".format(split, mean_rank))
+
+        for k in range(len(P)):
+            party_rank = ranks[:, k] != 0
+            plt.hist(ranks[party_rank, k])
+            plt.show()
 
     def get_full_d(self):
         return np.array([unfold_matrix(el) for el in self.d.get_value()])
