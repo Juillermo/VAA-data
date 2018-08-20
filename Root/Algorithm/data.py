@@ -172,5 +172,5 @@ class DataHolder:
     # folds = data_obj.get_splits()
 
 
-data_obj = DataHolder()
-data_obj.get_random_accuracy()
+#data_obj = DataHolder()
+#data_obj.get_random_accuracy()

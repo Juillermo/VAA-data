@@ -1,7 +1,7 @@
 import pickle
 
 import numpy as np
-from sklearn.metrics import f1_score
+from sklearn.metrics import f1_score, precision_score
 import theano
 import theano.tensor as T
 import matplotlib.pyplot as plt
@@ -156,8 +156,11 @@ class Model:
         v_max = np.argmax(V, axis=1)
         p_max = np.argmax(self.predict(U, P), axis=1)
         acc = sum(v_max == p_max) / float(M)
+
+        fvec = f1_score(v_max, p_max, average=None)
+        precvec = precision_score(v_max, p_max, average=None)
         f1 = f1_score(v_max, p_max, average='weighted')
-        return acc, f1
+        return acc, f1, fvec, precvec
 
     def get_confusion_matrices(self, data_obj, split="all"):
         U, P, V = data_obj.get_data(split)
@@ -208,10 +211,12 @@ class Model:
         mean_rank = np.sum(ranks) / len(ranks)
         print("Mean rank ({:s}): {:.5f}".format(split, mean_rank))
 
-        for k in range(len(P)):
-            party_rank = ranks[:, k] != 0
-            plt.hist(ranks[party_rank, k])
-            plt.show()
+        #for k in range(len(P)):
+            #party_rank = ranks[:, k] != 0
+            #plt.hist(ranks[party_rank, k])
+            #plt.show()
+
+        return ranks
 
     def get_full_d(self):
         return np.array([unfold_matrix(el) for el in self.d.get_value()])

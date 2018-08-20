@@ -48,14 +48,16 @@ def unfold_sum_matrix(mat):
     return temp_mat2
 
 
-def plotLLmatrix(ax, data, vmax=None, cmap='bwr'):
-    L = len(L_SET)
+def plotLLmatrix(ax, data, vmax=None, cmap='bwr', lset=None):
+    if lset is None:
+        lset = L_SET
+    L = len(lset)
     if vmax is not None:
         cax = ax.imshow(data, cmap=cmap, vmin=-vmax, vmax=vmax)
     else:
         cax = ax.imshow(data, cmap=cmap)
-    ax.xaxis.set(ticks=range(L), ticklabels=L_SET)
-    ax.yaxis.set(ticks=range(L), ticklabels=L_SET)
+    ax.xaxis.set(ticks=range(L), ticklabels=lset)
+    ax.yaxis.set(ticks=range(L), ticklabels=lset)
     return cax
 
 
@@ -74,3 +76,4 @@ def plot_confusion(ax, conf, title, party_names):
                  ticklabels=party_names)  # , ticks_position="right", label_position="right")
     ax.set(xlabel="Recommendation", ylabel="Voting intention", title=title)
     cax = ax.imshow(100 * conf, cmap='Blues')  # , vmin=0, vmax=100)
+    return cax

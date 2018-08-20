@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17a89b18-5e65-4b6c-a6ee-4d55d6a9e154" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Root/Algorithm/results_Hamburgo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Root/Algorithm/Algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Root/Algorithm/Algorithm.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Root/Algorithm/algorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/Root/Algorithm/algorithm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Root/Algorithm/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Root/Algorithm/data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Root/Algorithm/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Root/Algorithm/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Root/Algorithm/pics/nodos.dia" beforeDir="false" afterPath="$PROJECT_DIR$/Root/Algorithm/pics/nodos.dia" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Root/Algorithm/pics/nodos.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Root/Algorithm/pics/nodos.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Root/Algorithm/plots/ours_confusion_matrices.eps" beforeDir="false" afterPath="$PROJECT_DIR$/Root/Algorithm/plots/ours_confusion_matrices.eps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Root/Algorithm/plots/sample_distances.png" beforeDir="false" afterPath="$PROJECT_DIR$/Root/Algorithm/plots/sample_distances.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Root/Algorithm/results_Hamburgo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Root/Algorithm/results_Hamburgo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Root/Algorithm/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Root/Algorithm/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Root/__init__.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,36 +23,38 @@
     <session id="461538873">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="ipynb" value="3" />
-          <entry key="py" value="10" />
+          <entry key="ipynb" value="4" />
+          <entry key="py" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="IPNB" value="3" />
-          <entry key="Python" value="10" />
+          <entry key="IPNB" value="4" />
+          <entry key="Python" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="528" />
-          <entry key="py" value="10240" />
+          <entry key="Python Console" value="694" />
+          <entry key="py" value="12110" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="10768" />
+          <entry key="Python" value="12804" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -77,13 +76,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Root/Algorithm/results_Hamburgo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+            <state relative-caret-position="18">
+              <caret line="123" column="45" selection-start-line="123" selection-start-column="45" selection-end-line="123" selection-end-column="45" />
               <folding>
-                <marker date="1534615375946" expanded="true" signature="1004:1557" ph="..." />
+                <marker date="1534730883891" expanded="true" signature="254:878" ph="..." />
+                <marker date="1534730883891" expanded="true" signature="1608:3161" ph="..." />
+                <marker date="1534730883891" expanded="true" signature="3220:5175" ph="..." />
               </folding>
             </state>
           </provider>
@@ -92,24 +93,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Root/Algorithm/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3474">
-              <caret line="202" column="12" selection-start-line="202" selection-start-column="12" selection-end-line="203" selection-end-column="82" />
+            <state relative-caret-position="3690">
+              <caret line="214" column="13" selection-start-line="214" selection-start-column="13" selection-end-line="214" selection-end-column="13" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1534615028871" expanded="true" signature="6100:6106" ph="..." />
+                <marker date="1534728238806" expanded="true" signature="6247:6253" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Root/Algorithm/data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="159" column="35" selection-start-line="159" selection-start-column="35" selection-end-line="159" selection-end-column="35" />
+            <state relative-caret-position="1134">
+              <caret line="137" column="67" selection-start-line="137" selection-start-column="67" selection-end-line="137" selection-end-column="67" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1534620306488" expanded="true" signature="3098:3101" ph="..." />
+                <element signature="e#3130#4542#0" />
+                <element signature="e#4583#5402#0" />
+                <element signature="e#5449#5737#0" />
+                <element signature="e#5780#5935#0" />
+                <element signature="e#5974#6127#0" />
+                <element signature="e#6172#6825#0" />
+                <element signature="e#6865#7233#0" />
+                <marker date="1534720514753" expanded="true" signature="3098:3101" ph="..." />
               </folding>
             </state>
           </provider>
@@ -118,11 +126,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Root/Algorithm/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="50" column="48" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
+            <state relative-caret-position="396">
+              <caret line="59" column="48" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="48" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1534610668352" expanded="true" signature="1611:1612" ph="..." />
+                <element signature="e#96#803#0" />
+                <element signature="e#838#1514#0" />
+                <marker date="1534730705674" expanded="true" signature="1663:1664" ph="..." />
               </folding>
             </state>
           </provider>
@@ -142,18 +152,19 @@
       <find>N</find>
       <find>D</find>
       <find>D_end</find>
-      <find>L_set</find>
       <find>questions</find>
       <find>self.name</find>
       <find>get_ranks</find>
       <find>get_ran</find>
       <find>get_accuracy</find>
       <find>get_weig</find>
+      <find>L_set</find>
+      <find>get_acc</find>
     </findStrings>
     <replaceStrings>
       <replace>full_d</replace>
-      <replace>L_SET</replace>
       <replace>QUESTIONS</replace>
+      <replace>L_SET</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -165,11 +176,11 @@
         <option value="$PROJECT_DIR$/Root/Algorithm/__init__.py" />
         <option value="$PROJECT_DIR$/Root/__init__.py" />
         <option value="$PROJECT_DIR$/__init__.py" />
-        <option value="$PROJECT_DIR$/Root/Algorithm/utils.py" />
-        <option value="$PROJECT_DIR$/Root/Algorithm/model.py" />
-        <option value="$PROJECT_DIR$/Root/Algorithm/results_Hamburgo.py" />
         <option value="$PROJECT_DIR$/Root/Algorithm/algorithm.py" />
         <option value="$PROJECT_DIR$/Root/Algorithm/data.py" />
+        <option value="$PROJECT_DIR$/Root/Algorithm/model.py" />
+        <option value="$PROJECT_DIR$/Root/Algorithm/utils.py" />
+        <option value="$PROJECT_DIR$/Root/Algorithm/results_Hamburgo.py" />
       </list>
     </option>
   </component>
@@ -180,10 +191,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1" />
-    <option name="y" value="-11" />
-    <option name="width" value="1922" />
-    <option name="height" value="1092" />
+    <option name="y" value="-4" />
+    <option name="width" value="1920" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -242,7 +252,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.data">
+  <component name="RunManager" selected="Python.results_Hamburgo">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="VAA-data" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -338,9 +348,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.results_Hamburgo" />
         <item itemvalue="Python.data" />
         <item itemvalue="Python.algorithm" />
-        <item itemvalue="Python.results_Hamburgo" />
       </list>
     </recent_temporary>
   </component>
@@ -360,7 +370,7 @@
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1922" height="1092" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14034152" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14354323" />
       <window_info id="Structure" order="1" weight="0.2497332" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -379,11 +389,11 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.952" visible="true" weight="0.2710779" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.7504" visible="true" weight="0.51600856" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="R Graphics" order="5" />
       <window_info anchor="right" id="R Packages" order="6" />
-      <window_info anchor="right" x="0" y="0" width="430" height="892" id="Documentation" order="7" sideWeight="0.048" side_tool="true" visible="true" weight="0.2710779" />
+      <window_info anchor="right" x="0" y="0" width="430" height="892" id="Documentation" order="7" sideWeight="0.2496" side_tool="true" visible="true" weight="0.51600856" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,23 +416,28 @@
     <entry file="file://$PROJECT_DIR$/Root/Algorithm/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Root/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Root/__init__.py" />
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Root/Algorithm/Algorithm.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/matplotlib/artist.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="880" selection-start-line="880" selection-end-line="880" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/sklearn/metrics/classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4453">
+          <caret line="875" column="4" selection-start-line="875" selection-start-column="4" selection-end-line="875" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Root/Algorithm/Algorithm.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="35" />
         </state>
       </provider>
     </entry>
@@ -438,46 +453,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Root/Algorithm/results_Hamburgo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-          <folding>
-            <marker date="1534615375946" expanded="true" signature="1004:1557" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Root/Algorithm/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3474">
-          <caret line="202" column="12" selection-start-line="202" selection-start-column="12" selection-end-line="203" selection-end-column="82" />
+        <state relative-caret-position="3690">
+          <caret line="214" column="13" selection-start-line="214" selection-start-column="13" selection-end-line="214" selection-end-column="13" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1534615028871" expanded="true" signature="6100:6106" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Root/Algorithm/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="50" column="48" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1534610668352" expanded="true" signature="1611:1612" ph="..." />
+            <marker date="1534728238806" expanded="true" signature="6247:6253" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Root/Algorithm/data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="159" column="35" selection-start-line="159" selection-start-column="35" selection-end-line="159" selection-end-column="35" />
+        <state relative-caret-position="1134">
+          <caret line="137" column="67" selection-start-line="137" selection-start-column="67" selection-end-line="137" selection-end-column="67" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#6835#7203#0" />
-            <marker date="1534620306488" expanded="true" signature="3098:3101" ph="..." />
+            <element signature="e#3130#4542#0" />
+            <element signature="e#4583#5402#0" />
+            <element signature="e#5449#5737#0" />
+            <element signature="e#5780#5935#0" />
+            <element signature="e#5974#6127#0" />
+            <element signature="e#6172#6825#0" />
+            <element signature="e#6865#7233#0" />
+            <marker date="1534720514753" expanded="true" signature="3098:3101" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Root/Algorithm/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="59" column="48" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#96#803#0" />
+            <element signature="e#838#1514#0" />
+            <marker date="1534730705674" expanded="true" signature="1663:1664" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Root/Algorithm/results_Hamburgo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="123" column="45" selection-start-line="123" selection-start-column="45" selection-end-line="123" selection-end-column="45" />
+          <folding>
+            <marker date="1534730883891" expanded="true" signature="254:878" ph="..." />
+            <marker date="1534730883891" expanded="true" signature="1608:3161" ph="..." />
+            <marker date="1534730883891" expanded="true" signature="3220:5175" ph="..." />
           </folding>
         </state>
       </provider>
