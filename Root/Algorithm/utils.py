@@ -1,6 +1,6 @@
 import numpy as np
 
-from data import L_SET
+from Algorithm.data import L_SET
 
 PLOTS_PATH = "plots/"
 

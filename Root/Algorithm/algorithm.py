@@ -95,19 +95,20 @@ def print_weights(the_model):
     # full_d = np.array([unfold_matrix(el) for el in d_init])
     fig, ax = plt.subplots(figsize=(10, 3))
     ax.bar(range(N), [np.linalg.norm(el) for el in full_d])
-   # ax.set(title="Relative weights of the issue questions", xlabel="Issue question")
+    # ax.set(title="Relative weights of the issue questions", xlabel="Issue question")
     ax.yaxis.grid()
-    ax.xaxis.set(ticks=range(30), ticklabels=range(1,31))
+    ax.xaxis.set(ticks=range(30), ticklabels=range(1, 31))
     fig.savefig(PLOTS_PATH + "weights" + the_model.name + ".eps", format="eps")
     plt.show()
 
 
 def main():
     data_obj = DataHolder()
-    # data_obj.get_random_accuracy()
+    fig = data_obj.get_random_accuracy()
+    #fig.savefig(PLOTS_PATH + "users_per_party.eps")
 
     # our_model = train_new_model(data_obj)
-    our_model = Model(file_name="20180817-150608")
+    # our_model = Model(file_name="20180817-150608")
     # mendez_model = Model(file_name="Mendez")
 
     # print(our_model.get_accuracy(data_obj, "test"), mendez_model.get_accuracy(data_obj, "test"))
@@ -117,8 +118,8 @@ def main():
 
     # our_model.get_confusion_matrices(data_obj, "train")
 
-    #print_distance_matrices(data_obj, our_model)
-    print_weights(our_model)
+    # print_distance_matrices(data_obj, our_model)
+    # print_weights(our_model)
 
 
 if __name__ == "__main__":

@@ -145,9 +145,15 @@ class DataHolder:
         print("Users per party: " + str(u_per_k))
 
         fig, ax = plt.subplots(figsize=(10, 2))
-        ax.bar(range(K), u_per_k)
-        ax.set(title="Users per party")
+        rects = ax.bar(range(K), u_per_k)
+        #ax.set(title="Users per party")
         ax.xaxis.set(ticks=range(K), ticklabels=self.party_names)
+
+        for rect in rects:
+            height = rect.get_height()
+            ax.text(rect.get_x() + rect.get_width() / 2., 1.05 * height,
+                    '%d' % int(height),
+                    ha='center', va='bottom')
         fig.show()
 
         print("Random_acc:", sum(u_per_k_norm ** 2))
@@ -158,6 +164,8 @@ class DataHolder:
         ranks[pred] = np.arange(len(pred)) + 1  # Due to index mismatch
 
         print("Random mean rank: ", np.sum(ranks * u_per_k_norm))
+
+        return fig
 
     def compute_splits(self):
         folds = list(StratifiedShuffleSplit(n_splits=1, test_size=0.1, random_state=RANDOM_STATE).split(
