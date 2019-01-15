@@ -48,7 +48,7 @@ def plot_distance_matrices(our_model):
     # _max_D = np.amax(abs(full_d))
 
     fig, ax = plt.subplots(1, 5, figsize=(12, 2.5))
-    titles = ["Proximity-like", "Directionality-like", "Hybryd-like", "Other possible paradigms", "Rather nonsense"]
+    titles = ["Proximity-like", "Directionality-like", "Hybrid-like", "Other possible paradigms", "Rather nonsense"]
     for i, j in enumerate([0, 8, 18, 28, 20]):
         _max_D = np.amax(abs(full_d[j]))
         plotLLmatrix(ax[i], full_d[j], vmax=_max_D)
@@ -57,7 +57,7 @@ def plot_distance_matrices(our_model):
     # plt.colorbar(cax)
 
     plt.tight_layout()
-    fig.savefig(PLOTS_PATH + "sample_distances.png")
+    #fig.savefig(PLOTS_PATH + "sample_distances.png")
     fig.show()
 
 
@@ -156,15 +156,15 @@ def plot_Mendez():
     fig.colorbar(cax)
 
     plt.tight_layout()
-    fig.savefig(PLOTS_PATH + "prox_dir_hyb.eps")
+    #fig.savefig(PLOTS_PATH + "prox_dir_hyb.eps")
     plt.show()
 
 
 if __name__ == "__main__":
-    data_obj = DataHolder()
+#    data_obj = DataHolder()
 # data_obj.get_random_accuracy()
 
-    our_model = Model(file_name="20180817-150608")
+#    our_model = Model(file_name="20180817-150608")
 # mendez_model = Model(file_name="Mendez")
 
 # plot_currentVAA_confmat(data_obj, mendez_model)
@@ -178,4 +178,4 @@ if __name__ == "__main__":
 
 # our_model.get_confusion_matrices(data_obj, "train")
 #print_weights(our_model)
-    #plot_Mendez()
+    plot_Mendez()
