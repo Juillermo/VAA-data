@@ -1,10 +1,10 @@
 from random import randint, random
 from copy import deepcopy
 from datetime import datetime
+import numpy as np
 
 from Algorithm.model import IntegerProgramming
-from Algorithm.data import RANDOM_STATE, QUESTIONS, DataHolder, L_SET
-from Algorithm.utils import unfold_matrix, PLOTS_PATH, plot_confusion
+from Algorithm.data import QUESTIONS, DataHolder
 
 GENETIC_PATH = "genetic_output/"
 
@@ -38,6 +38,7 @@ class Individual:
 
     def __init__(self, genome=[]):
         self.fitness = 0
+        self.weights = []
         if not genome:
             self.genome = [Gene(Individual.bit_string)
                            for _ in range(Individual.bit_string)]
@@ -155,8 +156,8 @@ class Population:
 
 class Evolver:
     def __init__(self, training_steps=5):
-        data_obj = DataHolder()
-        self.U_train, self.P_train, self.V_train = data_obj.get_training_data()
+        self.data_obj = DataHolder()
+        self.U_train, self.P_train, self.V_train = self.data_obj.get_training_data()
         self.model = IntegerProgramming(training_steps)
 
         self.n_of_evals = 0
@@ -171,14 +172,18 @@ class Evolver:
             Individual.set_bit_string(bit_string)
             population = Population(population_size)
 
-            [self.evaluate(individual)
-             for individual in population.get_individuals()]
+            proxim_ind = Individual([0 for _ in range(bit_string)])
+            intens_ind = Individual([1 for _ in range(bit_string)])
+            inds = population.get_individuals()
+            inds[:2] = [proxim_ind, intens_ind]
+            population.set_individuals(inds)
+
+            [self.evaluate(individual) for individual in population.get_individuals()]
 
             population.refresh_best_individual()
             population.refresh_worst_fitness()
             self.print_individual(population.get_best_individual())
-            a_file.write(str(self.n_of_evals) + ", " +
-                         str(population.get_best_individual().get_fitness()) + "\n")
+            a_file.write(str(self.n_of_evals) + ", " + str(population.get_best_individual().get_fitness()) + "\n")
 
             while self.n_of_evals < goal_evals:
                 self.generation += 1
@@ -202,24 +207,30 @@ class Evolver:
 
             print("Evolution process finished, num of generations: " + str(self.generation))
 
+        proxim_ind = Individual([0 for _ in range(bit_string)])
+        self.evaluate(proxim_ind)
+        intens_ind = Individual([1 for _ in range(bit_string)])
+        self.evaluate(intens_ind)
+
         with open(GENETIC_PATH + 'spread.txt', 'w+') as a_file:
-            [a_file.write(str((ind.get_genome(), ind.get_fitness()) + "\n")
-                          for ind in population.get_individuals()]
+            [a_file.write(str((ind.get_genome(), ind.weights, ind.get_fitness(),
+                               self.model.get_accuracy(self.data_obj, ind.get_genome(), ind.weights, "test")[0])) + "\n")
+             for ind in np.append([proxim_ind,intens_ind], population.get_individuals())]
 
     def evaluate(self, individual):
         """Evaluates fitness using the other populations' best individuals"""
         matrix_combination = individual.get_genome()
         individual.set_fitness(self.model.train(self.U_train, self.P_train, self.V_train, matrix_combination))
+        individual.weights = np.copy(self.model.w.get_value())
         self.n_of_evals += 1
 
     def print_individual(self, individual):
-        print("Evals" + str(self.n_of_evals) + ", " + str(individual) +
-              ", " + str(individual.get_genome()))
+        print("Evals" + str(self.n_of_evals) + ", " + str(individual) + ", " + str(individual.get_genome()))
 
 
 if __name__ == "__main__":
     gradient_steps_per_evaluation = 5
-    goal_evals = 100
+    goal_evals = 120
     population_size = 10
 
     evolver = Evolver(gradient_steps_per_evaluation)

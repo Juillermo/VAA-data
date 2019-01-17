@@ -365,6 +365,7 @@ class IntegerProgramming:
             self.name = "new"
             print("Weights of the model randomly initialized")
             w_init = np.random.randn(self.N)
+            w_init[w_init < 0] = -w_init[w_init < 0]
 
         self.build(w_init)
 
@@ -403,7 +404,7 @@ class IntegerProgramming:
         self.train_func = theano.function(
             inputs=[u, p, v, d],
             outputs=[s, err.mean()],
-            updates=[(self.w, self.w - mu * gd)])
+            updates=[(self.w, self.w - T.switch(T.gt(self.w - mu * gd, 0), mu * gd, 0))])
         self.get_err = theano.function(
             inputs=[u, p, v, d],
             outputs=err.mean())
@@ -412,26 +413,17 @@ class IntegerProgramming:
         self.get_latent = theano.function(inputs=[u, p, d], outputs=q)
 
     def train(self, U_train, P_train, V_train, matrix_combination):
-        L = len(L_SET)
-        distance_matrices = np.zeros((self.N, L, L))
-
-        for i, choice in enumerate(matrix_combination):
-            if choice:
-                distance_matrices[i, ...] = IntegerProgramming.intensity_matrix
-            else:
-                distance_matrices[i, ...] = IntegerProgramming.proximity_matrix
-
         for i in range(self.training_steps):
-            pred, error = self.train_func(U_train, P_train, V_train, distance_matrices)
-
+            pred, error = self.train_func(U_train, P_train, V_train, self.get_full_d(matrix_combination))
         return error
 
-    def get_accuracy(self, data_obj, split="all"):
-        raise Exception("Not implemented yet")
+    def get_accuracy(self, data_obj, matrix_combination, weights, split="all"):
         U, P, V = data_obj.get_data(split)
+        self.w.set_value(weights)
+
         M = len(U)
         v_max = np.argmax(V, axis=1)
-        p_max = np.argmax(self.predict(U, P), axis=1)
+        p_max = np.argmax(self.predict(U, P, self.get_full_d(matrix_combination)), axis=1)
         acc = sum(v_max == p_max) / float(M)
 
         fvec = f1_score(v_max, p_max, average=None)
@@ -497,9 +489,17 @@ class IntegerProgramming:
 
         return ranks
 
-    def get_full_d(self):
-        raise Exception("Not implemented yet")
-        return np.array([unfold_matrix(el) for el in self.d.get_value()])
+    @staticmethod
+    def get_full_d(matrix_combination):
+        L = len(IntegerProgramming.intensity_matrix)
+        distance_matrices = np.zeros((len(matrix_combination), L, L))
+
+        for i, choice in enumerate(matrix_combination):
+            if choice:
+                distance_matrices[i, ...] = IntegerProgramming.intensity_matrix
+            else:
+                distance_matrices[i, ...] = IntegerProgramming.proximity_matrix
+        return distance_matrices
 
 
 if __name__ == "__main__":
