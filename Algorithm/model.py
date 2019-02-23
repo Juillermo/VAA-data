@@ -1,17 +1,14 @@
 import pickle
-import time
 
 import numpy as np
-import pandas as pd
 from sklearn.svm import SVC
 from sklearn.multiclass import OneVsRestClassifier
 from sklearn.metrics import f1_score, precision_score
 import theano
 import theano.tensor as T
-import matplotlib.pyplot as plt
 
-from Algorithm.data import RANDOM_STATE, QUESTIONS, DataHolder, L_SET
-from Algorithm.utils import unfold_matrix, PLOTS_PATH, plot_confusion
+from Algorithm.data import RANDOM_STATE, QUESTIONS, DataHolder
+from Algorithm.utils import unfold_matrix
 
 MODELS_PATH = "models/"
 
@@ -313,202 +310,10 @@ class SVM:
         return confs
 
 
-class IntegerProgramming:
-    proximity_matrix = \
-        np.array([[1, 0.75, 0.25, -0.25, -1, 0],
-                  [0.75, 1, 0.75, 0.25, -0.25, 0],
-                  [0.25, 0.75, 1, 0.75, 0.25, 0],
-                  [-0.25, 0.25, 0.75, 1, 0.75, 0],
-                  [-1, -0.25, 0.25, 0.75, 1, 0],
-                  [0, 0, 0, 0, 0, 0]])
-
-    directionality_matrix = \
-        np.array([[1, 1, 0, -1, -1, 0],
-                  [1, 1, 0, -1, -1, 0],
-                  [0, 0, 0, 0, 0, 0],
-                  [-1, -1, 0, 1, 1, 0],
-                  [-1, -1, 0, 1, 1, 0],
-                  [0, 0, 0, 0, 0, 0]])
-
-    intensity_matrix = \
-        np.array([[1, 0.5, 0, -0.5, -1, 0],
-                  [0.5, 0.25, 0, -0.25, -0.5, 0],
-                  [0, 0, 0, 0, 0, 0],
-                  [-0.5, -0.25, 0, 0.25, 0.5, 0],
-                  [-1, -0.5, 0, 0.5, 1, 0],
-                  [0, 0, 0, 0, 0, 0]])
-
-    def __init__(self, training_steps, n_questions=len(QUESTIONS), file_name=None):
-        self.training_steps = training_steps
-        self.N = n_questions
-        self.train_params = None
-
-        # Tensor variables
-        self.u = None  # user profiles tensor
-        self.p = None  # party profiles tensor
-        self.d = None  # distance matrices values
-        self.s = None  # output (post-softmax)
-
-        # Functions
-        self.predict = None
-        self.get_latent = None
-
-        # Initialize model
-        self.name = "Integer Programming"
-        if file_name is not None:
-            # self.name = file_name
-            # with open(MODELS_PATH + "model-" + file_name + ".pkl", 'rb') as f:
-            #    self.train_params, d_init = pickle.load(f)
-            # print("Weights of the model loaded from file " + file_name)
-            raise Exception("Reading from stored model still not implemented")
-        else:
-            self.name = "new"
-            print("Weights of the model randomly initialized")
-            w_init = np.random.randn(self.N)
-            w_init[w_init < 0] = -w_init[w_init < 0]
-
-        self.build(w_init)
-
-    def build(self, w_init):
-        # Symbolic variables
-        u = T.dtensor3("u")
-        p = T.dtensor3("p")
-        d = T.dtensor3("d")
-
-        self.w = theano.shared(w_init, name="w")
-
-        # Compute distance scores
-        s = T.batched_dot(u.dimshuffle((1, 0, 2)), d)
-        q = T.batched_dot(s, p.dimshuffle((1, 2, 0)))
-        # s = T.nnet.sigmoid(s)
-
-        # Aggregate with weights
-        s = T.tensordot(q, self.w, axes=[[0], [0]])
-        # s = T.nnet.sigmoid(s)
-
-        # Final outcome
-        s = T.nnet.softmax(s)
-
-        # Training parameters
-        lambda0 = 0.01  # regularization parameter
-        mu = 1  # learning rate
-
-        print("Building training functions...")
-        v = T.dmatrix("v")
-        # Error function, cost and gradient
-        err = T.nnet.categorical_crossentropy(s, v)
-        cost = err.mean() + lambda0 * (self.w ** 2).sum()  # T.sum(abs(self.w))
-        gd = T.grad(cost, self.w)
-
-        # Compile
-        self.train_func = theano.function(
-            inputs=[u, p, v, d],
-            outputs=[s, err.mean()],
-            updates=[(self.w, self.w - T.switch(T.gt(self.w - mu * gd, 0), mu * gd, 0))])
-        self.get_err = theano.function(
-            inputs=[u, p, v, d],
-            outputs=err.mean())
-
-        self.predict = theano.function(inputs=[u, p, d], outputs=s)
-        self.get_latent = theano.function(inputs=[u, p, d], outputs=q)
-
-    def train(self, U_train, P_train, V_train, matrix_combination):
-        for i in range(self.training_steps):
-            pred, error = self.train_func(U_train, P_train, V_train, self.get_full_d(matrix_combination))
-        return error
-
-    def get_accuracy(self, data_obj, matrix_combination, weights, split="all"):
-        U, P, V = data_obj.get_data(split)
-        self.w.set_value(weights)
-
-        M = len(U)
-        v_max = np.argmax(V, axis=1)
-        p_max = np.argmax(self.predict(U, P, self.get_full_d(matrix_combination)), axis=1)
-        acc = sum(v_max == p_max) / float(M)
-
-        fvec = f1_score(v_max, p_max, average=None)
-        precvec = precision_score(v_max, p_max, average=None)
-        f1 = f1_score(v_max, p_max, average='weighted')
-        return acc, f1, fvec, precvec
-
-    def get_confusion_matrices(self, data_obj, split="all"):
-        raise Exception("Not implemented yet")
-        U, P, V = data_obj.get_data(split)
-        party_names = data_obj.party_names
-        M, K = len(U), len(P)
-
-        v_max = np.argmax(V, axis=1)
-        p_max = np.argmax(self.predict(U, P), axis=1)
-        print("Accuracy({:s}): {:.5f}".format(split, sum(v_max == p_max) / float(M)))
-
-        conf = np.zeros((K, K))
-        for i in range(M):
-            conf[v_max[i], p_max[i]] += 1
-
-        conf_names = ['Absolute values', 'Percentages by row (recall)', 'Percentages by column (precision)',
-                      'Merge (f-score)']
-        confs = []
-        for _ in conf_names:
-            confs.append(conf.copy())
-
-        # fig3, ax3 = plt.subplots(1, len(conf_names), figsize=(20, 5))
-        for i, el in enumerate(conf_names):
-            conf = confs[i]
-            for k in range(K):
-                if i == 1:
-                    conf[k, :] = conf[k, :] / sum(conf[k, :])
-                elif i == 2:
-                    conf[:, k] = conf[:, k] / sum(conf[:, k])
-                elif i == 3:
-                    conf = 2 * confs[1] * confs[2] / (confs[1] + confs[2])
-
-            # plot_confusion(ax3[i], conf, title=el, party_names=party_names)
-
-        # fig3.savefig(PLOTS_PATH + self.name + "_confusion_matrices.eps")
-        # fig3.show()
-        return confs
-
-    def get_rank_info(self, data_obj, split="all"):
-        raise Exception("Not implemented yet")
-        U, P, V = data_obj.get_data(split=split)
-
-        all_ranks = -self.predict(U, P)
-        for i, pred in enumerate(all_ranks):
-            pred = pred.argsort()
-            all_ranks[i, pred] = np.arange(len(pred)) + 1  # Due to index mismatch
-
-        ranks = all_ranks * V
-
-        mean_rank = np.sum(ranks) / len(ranks)
-        print("Mean rank ({:s}): {:.5f}".format(split, mean_rank))
-
-        # for k in range(len(P)):
-        # party_rank = ranks[:, k] != 0
-        # plt.hist(ranks[party_rank, k])
-        # plt.show()
-
-        return ranks
-
-    @staticmethod
-    def get_full_d(matrix_combination):
-        L = len(IntegerProgramming.intensity_matrix)
-        distance_matrices = np.zeros((len(matrix_combination), L, L))
-
-        for i, choice in enumerate(matrix_combination):
-            if choice:
-                distance_matrices[i, ...] = IntegerProgramming.intensity_matrix
-            else:
-                distance_matrices[i, ...] = IntegerProgramming.proximity_matrix
-        return distance_matrices
-
-
 if __name__ == "__main__":
     dataobj = DataHolder()
     # model = SVM()
     # model.train(dataobj)
-
-    model = IntegerProgramming()
-    model.train(dataobj)
 
     # a, f, v, p = model.get_accuracy(dataobj, "test")
     # ranks = model.get_rank_info(dataobj, "test")
