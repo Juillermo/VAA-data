@@ -1,0 +1,14 @@
+
+PROCESSED DATASET FOR England
+===================================
+
+Original shape (59291, 79)
+After issue voters (30756, 79)
+After educated (Highschool and above): (27214, 79)
+After very politically active (Very) (11951, 79)
+vi size: 11951
+Missing vi: 33
+['Conservative', 'Labour', 'LibDems', 'Green', 'UKIP']
+Filtered vi size: 10385
+30 answers
+Reduced database size: (10385, 30)

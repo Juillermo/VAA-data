@@ -1,0 +1,28 @@
+
+PROCESSED DATASET FOR Spain
+===================================
+
+Original shape (172434, 79)
+After issue voters (67725, 79)
+After educated (Highschool and above): (61722, 79)
+After very politically active (Very) (36998, 79)
+vi size: 36998
+Missing vi: 142
+['PP', 'PSOE', 'UpyD', 'Ciudadanos', 'VOX', 'Podemos', 'RED', 'IU', 'PNV_CiU', 'ERC', 'BNG_Bildu', 'Equo']
+Filtered vi size: 30808
+30 answers
+Reduced database size: (30808, 30)
+
+PROCESSED DATASET FOR Spain
+===================================
+
+Original shape (172434, 79)
+After issue voters (67725, 79)
+After educated (Highschool and above): (61722, 79)
+After very politically active (Very) (36998, 79)
+vi size: 36998
+Missing vi: 142
+['PP', 'PSOE', 'UpyD', 'Ciudadanos', 'VOX', 'Podemos', 'RED', 'IU', 'PNV_CiU', 'ERC', 'BNG_Bildu', 'Equo']
+Filtered vi size: 30808
+30 answers
+Reduced database size: (30808, 30)

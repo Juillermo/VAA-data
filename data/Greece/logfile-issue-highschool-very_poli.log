@@ -1,0 +1,28 @@
+
+PROCESSED DATASET FOR Greece
+===================================
+
+Original shape (45274, 79)
+After issue voters (19506, 79)
+After educated (Highschool and above): (19021, 79)
+After very politically active (Very) (7697, 79)
+vi size: 7697
+Missing vi: 152
+['ND', 'Syriza', 'Elia', 'ANEL', 'KKE', 'GD', 'DIMAR', 'Potami', 'Greens', 'Drassi']
+Filtered vi size: 5409
+30 answers
+Reduced database size: (5409, 30)
+
+PROCESSED DATASET FOR Greece
+===================================
+
+Original shape (45274, 79)
+After issue voters (19506, 79)
+After educated (Highschool and above): (19021, 79)
+After very politically active (Very) (7697, 79)
+vi size: 7697
+Missing vi: 152
+['ND', 'Syriza', 'Elia', 'ANEL', 'KKE', 'GD', 'DIMAR', 'Potami', 'Greens', 'Drassi']
+Filtered vi size: 5409
+30 answers
+Reduced database size: (5409, 30)

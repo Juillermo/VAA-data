@@ -1,0 +1,15 @@
+\begin{tabular}{ccccc}
+    \hline
+    &  & Traditional VAA & \textbf{Learning VAA} & Social VAA (SVM) \\
+    \hline
+    \multirow{2}{*}{England} & Accuracy &0.597 $\pm$ 0.013 & 0.683 $\pm$ 0.009 & 0.659 $\pm$ 0.014\\
+    & F-score & 0.579 $\pm$ 0.013 & 0.673 $\pm$ 0.009 & 0.646 $\pm$ 0.016\\
+    \multirow{2}{*}{Portugal} & Accuracy &0.440 $\pm$ 0.015 & 0.555 $\pm$ 0.017 & 0.562 $\pm$ 0.014\\
+    & F-score & 0.447 $\pm$ 0.017 & 0.502 $\pm$ 0.018 & 0.541 $\pm$ 0.017\\
+    \multirow{2}{*}{Greece} & Accuracy &0.503 $\pm$ 0.019 & 0.578 $\pm$ 0.013 & 0.593 $\pm$ 0.019\\
+    & F-score & 0.510 $\pm$ 0.017 & 0.513 $\pm$ 0.015 & 0.559 $\pm$ 0.022\\
+    \multirow{2}{*}{Spain} & Accuracy &0.282 $\pm$ 0.004 & 0.403 $\pm$ 0.006 & 0.397 $\pm$ 0.009\\
+    & F-score & 0.273 $\pm$ 0.005 & 0.335 $\pm$ 0.007 & 0.353 $\pm$ 0.016\\
+    \multirow{2}{*}{Italy} & Accuracy &0.638 $\pm$ 0.013 & 0.701 $\pm$ 0.018 & 0.702 $\pm$ 0.021\\
+    & F-score & 0.631 $\pm$ 0.013 & 0.672 $\pm$ 0.019 & 0.690 $\pm$ 0.021\\
+\end{tabular}

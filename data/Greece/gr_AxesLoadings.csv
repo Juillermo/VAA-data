@@ -1,0 +1,36 @@
+		Original Axes Loadings	Item scalability coefficient H		Final Axes Loadings	Item scalability coefficient H
+q1	Greece should leave the Euro	-z	0.376		-z	0.449
+q2	A single member state should be able to block a treaty change, even if all the other members states agree to it	-z	0.26		-z	0.301
+q3	The right of EU citizens to work in Greece should be restricted	-z	0.232		-z	0.242
+q4	There should be a common EU foreign policy even if this limits the capacity of Greece to act independently	z	0.311		z	0.349
+q5	The EU should redistribute resources from richer to poorer EU regions	z	-0.051		0	
+q6	Overall, EU membership has been a bad thing for Greece	-z	0.376		-z	0.445
+q7	EU treaties should be decided by Greek parliament rather than by citizens in a referendum.	0			0	
+q8	The EU should impose economic sanctions on Russia, even if this jeopardises gas supplies to EU countries	z	0.205		z	0.235
+q9	European integration has gone too far	0			0	
+		Overall scale scalability coefficient H	0.26		Overall scale scalability coefficient H	0.34
+						
+q10	To combat unemployment, workers must accept signing individual contracts	x	0.414		x	0.442
+q11	Free market competition makes the health care system function better	x	0.424		x	0.452
+q12	The number of public sector employees should be reduced	x	0.389		x	0.428
+q13	The state should intervene as little as possible in the economy	x	0.341		x	0.384
+q14	Wealth should be redistributed from the richest people to the poorest	-x	0.26		0	
+q15	Cutting government spending is a good way to solve the economic crisis	x	0.309		x	0.339
+q16	It should be easy for companies to fire people	x	0.389		x	0.419
+q17	External loans from institutions such as the IMF are a good solution to crisis situations.	x	0.274		0	
+q18	Taxes on large corporations should be decreased to prevent them from moving to neighbouring countries	x	0.343		x	0.363
+q19	State property that remains unexploited should be sold	x	0.366		x	0.387
+q20	To boost economic growth, the mining and exploitation of the mineral wealth in the country should take place	x	0.267		0	
+		Overall scale scalability coefficient H	0.347		Overall scale scalability coefficient H	0.401
+						
+q21	Immigrants must adapt to the values and culture of Greece	y	0.318		y	0.35
+q22	Restrictions on citizen privacy are acceptable in order to combat crime	y	0.274		0	
+q23	To maintain public order, governments should be able to restrict demonstrations	y	0.241		0	
+q24	Less serious crimes should be punished with community service, not imprisonment	-y	0.17		0	
+q25	Same sex couples should enjoy the same rights as heterosexual couples to marry	-y	0.418		-y	0.508
+q26	Women should be free to decide on matters of abortion	-y	0.296		-y	0.365
+q27	The recreational use of cannabis should be legal	-y	0.318		-y	0.364
+q28	The immigrants' children that have been born in Greece should have the right to obtain the Greek citizenship	-y	0.404		-y	0.485
+q29	Islam is a threat to the values of Greece	y	0.417		y	0.488
+q30	Religious believers of faiths other than Christian, should have the right to build their own places of worship in Greece	-y	0.402		-y	0.491
+		Overall scale scalability coefficient H	0.334		Overall scale scalability coefficient H	0.44

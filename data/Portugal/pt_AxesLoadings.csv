@@ -1,0 +1,36 @@
+		Original Axes Loadings	Item scalability coefficient H		Final Axes Loadings	Item scalability coefficient H
+q1	Portugal should leave the Euro	-z	0.353		-z	0.478
+q2	A single member state should be able to block a treaty change, even if all the other members states agree to it	-z	0.226		-z	0.285
+q3	The right of EU citizens to work in Portugal should be restricted	-z	0.2		0	
+q4	There should be a common EU foreign policy even if this limits the capacity of Portugal to act independently	z	0.292		z	0.336
+q5	The EU should redistribute resources from richer to poorer EU regions	z	0.027		0	
+q6	Overall, EU membership has been a bad thing for Portugal	-z	0.35		-z	0.448
+q7	EU treaties should be decided by the parliament rather than by citizens in a referendum.	0			0	
+q8	The European integration has gone too far	-z	0.382		-z	0.454
+		Overall scale scalability coefficient H	0.271		Overall scale scalability coefficient H	0.399
+						
+q9	Free market competition makes the health care system function better	x	0.376		x	0.404
+q10	The number of public sector employees should be reduced	x	0.407		x	0.454
+q11	The state should intervene as little as possible in the economy	x	0.374		x	0.399
+q12	Wealth should be redistributed from the richest people to the poorest	-x	0.274		-x	0.301
+q13	Cutting government spending is a good way to solve the economic crisis	x	0.327		x	0.359
+q14	It should be easy for companies to fire people	x	0.381		x	0.43
+q15	External loans from institutions such as the IMF are a good solution to crisis situations.	x	0.324		x	0.359
+q16	When a state rescues a bank it should take control over it	-x	0.12		0	
+q17	In order to consolidate public finances, it is necessary to reform the pension system	x	0.368		x	0.411
+q18	The increase of user fees in the National Health System limits access to health care	-x	0.312		-x	0.349
+q19	The Government should cut investment in scientific research, if it is not profitable	x	0.251		0	
+q20	The government should regulate electricity prices	-x	0.258		0	
+q21	The implementation of the memorandum of Troika damaged the economy of Portugal	-x	0.39		-x	0.429
+q30	The state should have a stronger role in the culture sector	-x	0.286		-x	0.306
+		Overall scale scalability coefficient H	0.321		Overall scale scalability coefficient H	0.384
+						
+q22	Immigrants must adapt to the values ​​of Portuguese culture	y	0.207		y	0.27
+q23	Restrictions on citizen privacy are acceptable in order to combat crime	y	0.234		y	0.286
+q24	To maintain public order, governments should be able to restrict demonstrations	y	0.299		y	0.359
+q25	Less serious crimes should be punished with community service, not imprisonment	-y	0.074		0	
+q26	Same sex couples should enjoy the same rights as heterosexual couples to marry	-y	0.336		-y	0.404
+q27	Women should be free to decide on matters of abortion	-y	0.303		-y	0.364
+q28	The recreational use of cannabis should be legal	-y	0.294		-y	0.325
+q29	Downloading copyright protected material from the internet should be allowed for private use	-y	0.142		0	
+		Overall scale scalability coefficient H	0.243		Overall scale scalability coefficient H	0.337

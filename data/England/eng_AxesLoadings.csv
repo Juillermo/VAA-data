@@ -1,0 +1,36 @@
+		Original Axes Loadings	Item scalability coefficient H		Final Axes Loadings	Item scalability coefficient H
+q1	The United Kingdom should never adopt the Euro	-Z	0.485		-Z	0.527
+q2	A single member state should be able to block a treaty change, even if all the other members states agree to it	-Z	0.378		-Z	0.412
+q3	The right of EU citizens to work in the United Kingdom should be restricted	-Z	0.495		-Z	0.537
+q4	There should be a common EU foreign policy even if this limits the capacity of the United Kingdom to act independently	Z	0.396		Z	0.426
+q5	The EU should redistribute resources from richer to poorer EU regions	Z	0.388		Z	0.409
+q6	Overall, EU membership has been a bad thing for the United Kingdom	-Z	0.559		-Z	0.607
+q7	EU treaties should be decided by Westminster rather than by citizens in a referendum.	0			0	
+q8	The EU should impose economic sanctions on Russia, even if this jeopardises gas supplies to EU countries	Z	0.194		0	
+q9	The United Kingdom should remain within the European Union.	Z	0.58		Z	0.632
+q10	The United Kingdom should hold an in or out referendum on EU membership as soon as possible.	-Z	0.511		-Z	0.555
+		Overall scale scalability coefficient H	0.446		Overall scale scalability coefficient H	0.516
+						
+q11	Free market competition makes the health care system function better	X	0.268		0	
+q12	The number of public sector employees should be reduced	X	0.307		X	0.389
+q13	The state should intervene as little as possible in the economy	X	0.271		X	0.339
+q14	Wealth should be redistributed from the richest people to the poorest	-X	0.259		-X	0.318
+q15	Cutting government spending is a good way to solve the economic crisis	X	0.292		X	0.359
+q16	It should be easy for companies to fire people	X	0.28		X	0.342
+q17	External loans from institutions such as the IMF are a good solution to crisis situations.	X	0		0	
+q18	When a state rescues a bank it should take control over it	-X	0.082		0	
+q19	The top rate of income tax should be reduced further.	X	0.294		X	0.354
+q20	The government should go ahead with the exploitation of underground shale gas (fracking).	X	0.242		0	
+		Overall scale scalability coefficient H	0.238		Overall scale scalability coefficient H	0.35
+						
+q21	Immigrants must adapt to the values and culture of the United Kingdom	Y	0.401		Y	0.523
+q22	Restrictions on citizen privacy are acceptable in order to combat crime	Y	0.185		0	
+q23	To maintain public order, governments should be able to restrict demonstrations	Y	0.249		0	
+q24	Less serious crimes should be punished with community service, not imprisonment	-Y	0.24		-Y	0.316
+q25	Same sex couples should enjoy the same rights as heterosexual couples to marry	-Y	0.311		-Y	0.381
+q26	Women should be free to decide on matters of abortion	-Y	0.184		0	
+q27	The recreational use of cannabis should be legal	-Y	0.22		0	
+q28	Islam is a threat to the values of the United Kingdom	Y	0.354		Y	0.483
+q29	The United Kingdom should welcome a larger number of asylum seekers from war-torn countries.	-Y	0.358		-Y	0.478
+q30	The United Kingdom should be allowed to set quotas on the number of EU immigrants entering the country.	Y	0.368		Y	0.475
+		Overall scale scalability coefficient H	0.283		Overall scale scalability coefficient H	0.437

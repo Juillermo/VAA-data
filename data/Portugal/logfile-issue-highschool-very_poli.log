@@ -1,0 +1,14 @@
+
+PROCESSED DATASET FOR Portugal
+===================================
+
+Original shape (43414, 79)
+After issue voters (13177, 79)
+After educated (Highschool and above): (12664, 79)
+After very politically active (Very) (5585, 79)
+vi size: 5585
+Missing vi: 11
+['Alianca', 'CDU', 'BE', 'PS', 'Livre', 'MPT', 'PAN', 'PCTP']
+Filtered vi size: 5007
+30 answers
+Reduced database size: (5007, 30)

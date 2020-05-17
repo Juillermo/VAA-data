@@ -1,0 +1,11 @@
+
+PROCESSED DATASET FOR Italy
+===================================
+
+Original shape (25160, 79)
+vi size: 25160
+Missing vi: 4616
+['FDI', 'FI', 'Lega Nord', 'M5S', 'NCD-UCD', 'PD', 'ScelteEur', 'Lista Tsipras']
+Filtered vi size: 12702
+30 answers
+Reduced database size: (12702, 30)

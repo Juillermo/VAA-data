@@ -1,0 +1,11 @@
+
+PROCESSED DATASET FOR England
+===================================
+
+Original shape (59291, 79)
+vi size: 59291
+Missing vi: 6347
+['Conservative', 'Labour', 'LibDems', 'Green', 'UKIP']
+Filtered vi size: 36557
+30 answers
+Reduced database size: (36557, 30)

@@ -1,0 +1,36 @@
+		Original Axes Loadings	Item scalability coefficient H		Final Axes Loadings	Item scalability coefficient H
+q1	Spain should drop the Euro as a currency	-z	0.242		-z	0.44
+q2	A single member state should be able to block a treaty change, even if all the other members states agree to it	-z	0.177		-z	0.264
+q3	The right of EU citizens to work in Spain should be restricted	-z	0.133		0	
+q4	There should be a common EU foreign policy even if this limits the capacity of Spain to act independently	z	0.22		z	0.289
+q5	The EU should redistribute resources from richer to poorer EU regions	z	0.046		0	
+q6	Overall, EU membership has been a bad thing for Spain	-z	0.251		-z	0.432
+q7	EU treaties should be decided by the Cortes Generales rather than by citizens in a referendum.	0			0	
+q8	To address financial crises, the EU should be able to borrow money just like states can	z	0.075		0	
+		Overall scale scalability coefficient H	0.17		Overall scale scalability coefficient H	0.356
+						
+q9	Free market competition makes the health care system function better	x	0.411		x	0.437
+q10	The number of public sector employees should be reduced	x	0.402		x	0.451
+q11	The state should intervene as little as possible in the economy	x	0.336		x	0.382
+q12	Wealth should be redistributed from the richest people to the poorest	-x	0.332		-x	0.348
+q13	Cutting government spending is a good way to solve the economic crisis	x	0.401		x	0.441
+q14	It should be easy for companies to fire people	x	0.385		x	0.424
+q15	External loans from institutions such as the IMF are a good solution to crisis situations.	x	0.274		0	
+q16	Protecting the environment is more important than fostering economic growth	-x	0.271		0	
+		Overall scale scalability coefficient H	0.353		Overall scale scalability coefficient H	0.415
+						
+q17	Immigrants must adapt to the values and culture of Spain	y	0.461		y	0.489
+q18	Restrictions on citizen privacy are acceptable in order to combat crime	y	0.354		y	0.369
+q19	To maintain public order, governments should be able to restrict demonstrations	y	0.518		y	0.546
+q20	Less serious crimes should be punished with community service, not imprisonment	-y	0.208		0	
+q21	Same sex couples should enjoy the same rights as heterosexual couples to marry	-y	0.498		-y	0.525
+q22	Women should be free to decide on matters of abortion	-y	0.484		-y	0.512
+q23	The recreational use of cannabis should be legal	-y	0.386		-y	0.399
+q24	Islam is a threat to the values of Ireland	y	0.471		y	0.496
+q25	The government is making unnecessary concessions to ETA	y	0.408		y	0.426
+q26	The Church enjoys too many privileges	-y	0.466		-y	0.492
+q27	The process of territorial decentralisation has gone too far in Spain	0			0	
+q28	Citizens should directly elect their candidates through primary elections	0			0	
+q29	The possibility of independence for an Autonomous Community should be recognized by the Constitution	0			0	
+q30	Spain should toughen up its immigration policy	y	0.49		y	0.512
+		Overall scale scalability coefficient H	0.432		Overall scale scalability coefficient H	0.474

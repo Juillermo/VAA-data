@@ -2,22 +2,230 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17a89b18-5e65-4b6c-a6ee-4d55d6a9e154" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/England/England.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/England/eng_AxesLoadings.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/England/eng_codebook.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/England/logfile-issue-highschool-very_poli.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/England/logfile-no_issue-no_education-no_poli.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/England/party_XYZ.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/England/user_answers-issue-highschool-very_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/England/user_answers-no_issue-no_education-no_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/England/user_data-no_issue-no_education-no_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/England/voting_intention-issue-highschool-very_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/England/voting_intention-no_issue-no_education-no_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Greece/Greece.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Greece/gr_AxesLoadings.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Greece/gr_codebook.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Greece/logfile-issue-highschool-very_poli.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Greece/logfile-no_issue-no_education-no_poli.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Greece/party_XYZ.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Greece/user_answers-issue-highschool-very_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Greece/user_answers-no_issue-no_education-no_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Greece/user_data-no_issue-no_education-no_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Greece/voting_intention-issue-highschool-very_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Greece/voting_intention-no_issue-no_education-no_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Italy/Italy.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Italy/it_AxesLoadings.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Italy/it_codebook.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Italy/logfile-issue-highschool-very_poli.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Italy/logfile-no_issue-no_education-no_poli.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Italy/party_XYZ.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Italy/user_answers-issue-highschool-very_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Italy/user_answers-no_issue-no_education-no_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Italy/user_data-no_issue-no_education-no_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Italy/voting_intention-issue-highschool-very_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Italy/voting_intention-no_issue-no_education-no_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Portugal/Portugal.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Portugal/logfile-issue-highschool-very_poli.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Portugal/logfile-no_issue-no_education-no_poli.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Portugal/party_XYZ.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Portugal/pt_AxesLoadings.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Portugal/pt_codebook.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Portugal/user_answers-issue-highschool-very_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Portugal/user_answers-no_issue-no_education-no_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Portugal/user_data-no_issue-no_education-no_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Portugal/voting_intention-issue-highschool-very_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Portugal/voting_intention-no_issue-no_education-no_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Spain/.~lock.es_party_XYZ.csv#" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Spain/Spain.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Spain/es_AxesLoadings.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Spain/logfile-issue-highschool-very_poli.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Spain/logfile-no_issue-no_education-no_poli.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Spain/user_answers-issue-highschool-very_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Spain/user_answers-no_issue-no_education-no_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Spain/user_data-issue-highschool-very_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Spain/user_data-no_issue-no_education-no_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Spain/voting_intention-issue-highschool-very_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Spain/voting_intention-no_issue-no_education-no_poli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/atrition.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/questions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/models-England-issue-high_ed-somewhat_poli-20190710-163841.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/models-England-issue-highschool-very_poli-20190812-090044.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/models-England-no_issue-no_education-no_poli-20190717-204933.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/models-Greece-issue-high_ed-somewhat_poli-20190710-172109.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/models-Greece-issue-highschool-very_poli-20190812-090044.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/models-Greece-no_issue-no_education-no_poli-20190717-213852.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/models-Italy-issue-high_ed-somewhat_poli-20190710-181919.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/models-Italy-issue-highschool-very_poli-20190812-090044.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/models-Italy-no_issue-no_education-no_poli-20190717-230459.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/models-Portugal-issue-high_ed-somewhat_poli-20190710-173443.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/models-Portugal-issue-highschool-very_poli-20190812-090044.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/models-Portugal-no_issue-no_education-no_poli-20190717-211304.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/models-Spain-issue-high_ed-somewhat_poli-20190710-175755.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/models-Spain-issue-highschool-very_poli-20190812-193821.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/models-Spain-no_issue-no_education-no_poli-20190717-224505.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/models-svm-England-issue-highschool-very_poli-20190812-203601.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/models-svm-Greece-issue-highschool-very_poli-20190812-205024.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/models-svm-Italy-issue-highschool-very_poli-20190812-205307.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/models-svm-Portugal-issue-highschool-very_poli-20190812-204224.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/models-svm-Spain-issue-highschool-very_poli-20190813-043139.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/distance_matrices-0-England-issue-high_ed-somewhat_poli-20190711-152552.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/distance_matrices-0-England-issue-highschool-very_poli-20190812-090044.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/distance_matrices-0-England-no_issue-no_education-no_poli-20190717-204933.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/distance_matrices-0-Greece-issue-high_ed-somewhat_poli-20190711-153559.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/distance_matrices-0-Greece-issue-highschool-very_poli-20190812-090044.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/distance_matrices-0-Greece-no_issue-no_education-no_poli-20190717-213852.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/distance_matrices-0-Italy-issue-high_ed-somewhat_poli-20190711-160116.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/distance_matrices-0-Italy-issue-highschool-very_poli-20190812-090044.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/distance_matrices-0-Italy-no_issue-no_education-no_poli-20190717-230459.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/distance_matrices-0-Portugal-issue-high_ed-somewhat_poli-20190711-155649.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/distance_matrices-0-Portugal-issue-highschool-very_poli-20190812-090044.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/distance_matrices-0-Portugal-no_issue-no_education-no_poli-20190717-211304.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/distance_matrices-0-Spain-issue-high_ed-somewhat_poli-20190711-154955.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/distance_matrices-0-Spain-issue-highschool-very_poli-20190812-193821.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/distance_matrices-0-Spain-no_issue-no_education-no_poli-20190717-224505.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/distance_matrices-1-Spain-issue-highschool-very_poli-20190812-193821.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/distance_matrices-2-Spain-issue-highschool-very_poli-20190812-193821.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/distance_matrices-3-Spain-issue-highschool-very_poli-20190812-193821.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/distance_matrices-4-Spain-issue-highschool-very_poli-20190812-193821.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/fscores-issue-highschool-very_poli20190812-090044.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/sample_distances-Spain-issue-highschool-very_poli-20190726-113226.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/sample_distances-issue-highschool-very_poli-20190812-090044.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/sample_distances-issue-highschool-very_poli-20190812-090044.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-England-issue-high_ed-somewhat_poli-20190710-111646.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-England-issue-high_ed-somewhat_poli-20190710-145614.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-England-issue-high_ed-somewhat_poli-20190711-152552.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-England-issue-highschool-very_poli-20190714-121441.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-England-issue-highschool-very_poli-20190726-094049.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-England-no_issue-no_education-no_poli-20190717-204933.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Greece-issue-high_ed-somewhat_poli-20190710-143716.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Greece-issue-high_ed-somewhat_poli-20190710-145039.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Greece-issue-high_ed-somewhat_poli-20190711-153559.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Greece-issue-highschool-very_poli-20190714-112130.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Greece-issue-highschool-very_poli-20190726-105017.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Greece-no_issue-no_education-no_poli-20190717-213852.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Greece-no_issue-no_education-no_poli-20190724-020106.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Italy-issue-high_ed-somewhat_poli-20190710-122746.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Italy-issue-high_ed-somewhat_poli-20190711-160116.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Italy-issue-highschool-very_poli-20190714-114521.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Italy-issue-highschool-very_poli-20190726-105941.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Italy-no_issue-no_education-no_poli-20190717-230459.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Portugal-issue-high_ed-somewhat_poli-20190711-155649.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Portugal-issue-highschool-very_poli-20190714-114110.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Portugal-issue-highschool-very_poli-20190726-104128.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Portugal-no_issue-no_education-no_poli-20190717-211304.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Spain-issue-high_ed-somewhat_poli-20190710-132329.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Spain-issue-high_ed-somewhat_poli-20190710-133012.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Spain-issue-high_ed-somewhat_poli-20190710-133727.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Spain-issue-high_ed-somewhat_poli-20190710-134610.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Spain-issue-high_ed-somewhat_poli-20190711-154955.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Spain-issue-highschool-very_poli-20190714-113524.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Spain-issue-highschool-very_poli-20190726-110726.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Spain-no_issue-no_education-no_poli-20190717-224505.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-Spain-no_issue-no_education-no_poli-20190723-115853.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-issue-highschool-very_poli20190726-110624.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-issue-highschool-very_poli20190726-113226.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weights-issue-highschool-very_poli20190812-090044.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weightsGreece-issue-high_ed-somewhat_poli-20190710-110941.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plots/weightsPortugal20190506-142703.eps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/VAA-data.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VAA-data.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/genetic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/genetic_output/20190115-003030.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/genetic_output/20190117-013533.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/genetic_output/20190117-014131.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/genetic_output/20190117-015343.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/genetic_output/20190117-015805.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/genetic_output/20190117-020222.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/genetic_output/spread.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/multidimensional.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/results_Hamburgo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithm/results_post_Hamburg.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/results_paper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/.ipynb_checkpoints/Algorithm-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/.ipynb_checkpoints/Data preparation for algorithm-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/Algorithm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/algorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/data/.ipynb_checkpoints/Data preparation for algorithm-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/data/Data preparation for algorithm.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/data/es_codebook.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Spain/es_codebook.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/data/es_party_XYZ.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Spain/party_XYZ.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/data/input_to_algorithm.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/data/voting_intention.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/data/weights.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/data/without_weights.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/models/model-20180817-150608.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/models/model-20180818-155719.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/models/svm.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/confusion_matrices_nuevo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/confusion_matrices_viejo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/nodos.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/nodos.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/pesos_matrices/pesos_matrices_9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/pics/weights.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/Mendez_confusion_matrices.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/comparison_confusion_dos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/comparison_confusion_matrices.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/comparison_confusion_matrices.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/comparison_confusion_matrices_3.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/confVAA.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/confVAA_barra.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/distance_matrices_0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/distance_matrices_0_20180817-150608.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/distance_matrices_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/distance_matrices_1_20180817-150608.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/distance_matrices_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/distance_matrices_2_20180817-150608.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/distance_matrices_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/distance_matrices_3_20180817-150608.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/distance_matrices_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/distance_matrices_4_20180817-150608.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/fscores.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/gdescent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/ideal_matrices.eps" beforeDir="false" afterPath="$PROJECT_DIR$/plots/ideal_matrices.eps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/ours_confusion_matrices.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/pesos_matrices_20180817-150608.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/pesos_matrices_20180817-150608.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/pesos_matrices_l1.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/prox_dir_hyb.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/pscores.eps" beforeDir="false" afterPath="$PROJECT_DIR$/plots/pscores.eps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/sample_distances.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/users_per_party.eps" beforeDir="false" afterPath="$PROJECT_DIR$/plots/users_per_party.eps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/plots/weights20180817-150608.eps" beforeDir="false" afterPath="$PROJECT_DIR$/plots/weights20180817-150608.eps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/results_paper.py" beforeDir="false" afterPath="$PROJECT_DIR$/results_paper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,9 +233,6 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/VAA_data$algorithm.coverage" NAME="algorithm Coverage Results" MODIFIED="1536855237325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Root/Algorithm" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -80,66 +285,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Root/Algorithm/__init__.py" />
-        <option value="$PROJECT_DIR$/Root/__init__.py" />
-        <option value="$PROJECT_DIR$/__init__.py" />
-        <option value="$PROJECT_DIR$/Root/Algorithm/utils.py" />
-        <option value="$PROJECT_DIR$/Root/Algorithm/data.py" />
-        <option value="$PROJECT_DIR$/Root/Algorithm/model.py" />
-        <option value="$PROJECT_DIR$/Root/Algorithm/algorithm.py" />
-        <option value="$PROJECT_DIR$/Root/Algorithm/results_Hamburgo.py" />
-        <option value="$PROJECT_DIR$/Root/Algorithm/results_post_Hamburg.py" />
-        <option value="$PROJECT_DIR$/Algorithm/multidimensional.py" />
-        <option value="$PROJECT_DIR$/Algorithm/genetic.py" />
-        <option value="$PROJECT_DIR$/Algorithm/data.py" />
-        <option value="$PROJECT_DIR$/Root/Aquienvoto/read_db.py" />
-        <option value="$PROJECT_DIR$/Algorithm/results_Hamburgo.py" />
-        <option value="$PROJECT_DIR$/Algorithm/results_post_Hamburg.py" />
-        <option value="$PROJECT_DIR$/Algorithm/model.py" />
-      </list>
-    </option>
+  <component name="JupyterTrust" id="fe68ae75-7201-416c-84fa-31e020975452" />
+  <component name="ProjectId" id="1c06CJK81yN7a6RJ2f1AnGsNcOo" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="25" />
-    <option name="width" value="950" />
-    <option name="height" value="789" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="VAA-data2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VAA-data2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VAA-data2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VAA-data2" type="462c0819:PsiDirectoryNode" />
-              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VAA-data2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VAA-data2" type="462c0819:PsiDirectoryNode" />
-              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="plots" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
@@ -152,17 +318,10 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.genetic">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -222,7 +381,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algorithm/model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -338,206 +497,14 @@
       <workItem from="1550340682564" duration="20000" />
       <workItem from="1550927584618" duration="1613000" />
       <workItem from="1550941520748" duration="1137000" />
+      <workItem from="1589653036416" duration="8149000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44494000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1055" extended-state="7" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23265742" />
-      <window_info id="Structure" order="1" weight="0.2497332" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32963374" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.47690654" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32867885" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Python Console" order="11" visible="true" weight="0.35405105" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.8178694" visible="true" weight="0.17395945" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="R Graphics" order="5" />
-      <window_info anchor="right" id="R Packages" order="6" />
-      <window_info anchor="right" x="0" y="0" width="430" height="892" id="Documentation" order="7" sideWeight="0.18213059" side_tool="true" visible="true" weight="0.17395945" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Root/Predata/GUILLE/Spain_CURADO.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Root/Algorithm/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/Root/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/matplotlib/artist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="880" selection-start-line="880" selection-end-line="880" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/sklearn/metrics/classification.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4453">
-          <caret line="875" column="4" selection-start-line="875" selection-start-column="4" selection-end-line="875" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Root/Algorithm/Algorithm.ipynb" />
-    <entry file="file://$PROJECT_DIR$/Root/Algorithm/algorithm.py" />
-    <entry file="file://$PROJECT_DIR$/Root/Algorithm/data.py" />
-    <entry file="file://$PROJECT_DIR$/Root/Algorithm/model.py" />
-    <entry file="file://$PROJECT_DIR$/Root/Algorithm/results_post_Hamburg.py" />
-    <entry file="file://$PROJECT_DIR$/Root/Limpieza Machine Learning.R" />
-    <entry file="file://$PROJECT_DIR$/Root/Algorithm/results_Hamburgo.py" />
-    <entry file="file://$PROJECT_DIR$/Root/Algorithm/utils.py" />
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/matplotlib/axes/_subplots.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/numpy/core/numeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2665">
-          <caret line="500" selection-start-line="500" selection-end-line="500" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Root/Aquienvoto/read_db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#106#813#0" />
-            <element signature="e#848#1524#0" />
-            <element signature="e#1593#1903#0" />
-            <element signature="e#1951#2155#0" />
-            <element signature="e#2212#2674#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/results_Hamburgo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-580">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" selection-end-column="45" />
-          <folding>
-            <element signature="e#305#921#0" />
-            <element signature="e#993#1613#0" />
-            <element signature="e#2276#3208#0" />
-            <element signature="e#3272#4164#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/multidimensional.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/results_paper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#274#1309#0" />
-            <element signature="e#334#942#0" />
-            <element signature="e#991#1910#0" />
-            <element signature="e#1967#4000#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/genetic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3582">
-          <caret line="199" column="18" selection-start-line="199" selection-start-column="18" selection-end-line="199" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1486">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#3148#4560#0" />
-            <element signature="e#4601#5420#0" />
-            <element signature="e#5467#5755#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/algorithm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="117" column="46" selection-start-line="117" selection-start-column="46" selection-end-line="117" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-            <element signature="e#339#875#0" />
-            <element signature="e#932#2896#0" />
-            <element signature="e#2933#3436#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="53" lean-forward="true" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-          <folding>
-            <element signature="e#8382#11538#0" />
-            <element signature="e#10277#11538#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/Algorithm.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/plots/comparison_confusion_matrices.eps">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/plots/comparison_confusion_dos.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

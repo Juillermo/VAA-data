@@ -1,0 +1,36 @@
+		Original Axes Loadings	Item scalability coefficient H		Final Axes Loadings	Item scalability coefficient H
+q1	Italy should drop the Euro as a currency	-z	0.443		-z	0.515
+q2	A single member state should be able to block a treaty change, even if all the other members states agree to it	-z	0.28		-z	0.324
+q3	The right of EU citizens to work in Italy should be restricted	-z	0.353		-z	0.371
+q4	There should be a common EU foreign policy even if this limits the capacity of Italy to act independently	z	0.352		z	0.394
+q5	The EU should redistribute resources from richer to poorer EU regions	z	0.067		0	
+q6	Overall, EU membership has been a bad thing for Italy	-z	0.421		-z	0.49
+q7	EU treaties should be decided by parliament rather than by citizens in a referendum.	0			z	0.341
+		Overall scale scalability coefficient H	0.325		Overall scale scalability coefficient H	0.41
+						
+q8	Free market competition makes the health care system function better	x	0.233		x	0.287
+q9	The number of public sector employees should be reduced	x	0.205		x	0.33
+q10	The state should intervene as little as possible in the economy	x	0.229		x	0.307
+q11	Wealth should be redistributed from the richest people to the poorest	-x	0.226		0	
+q12	Cutting government spending is a good way to solve the economic crisis	x	0.199		x	0.295
+q13	It should be easy for companies to fire people	x	0.242		x	0.289
+q14	External loans from institutions such as the IMF are a good solution to crisis situations.	x	0.119		0	
+q15	Protecting the environment is more important than fostering economic growth	-x	0.154		0	
+q16	When a state rescues a bank it should take control over it	-x	0.116		0	
+q17	The government should eliminate the tax on first homes	0			0	
+q18	The government should introduce a minimum wage	-x	0.164		0	
+		Overall scale scalability coefficient H	0.19		Overall scale scalability coefficient H	0.301
+						
+q19	Immigrants must adapt to the values and culture of Italy	y	0.388		y	0.448
+q20	Restrictions on citizen privacy are acceptable in order to combat crime	y	0.176		0	
+q21	To maintain public order, governments should be able to restrict demonstrations	y	0.334		y	0.35
+q22	Less serious crimes should be punished with community service, not imprisonment	-y	0.142		0	
+q23	Same sex couples should enjoy the same rights as heterosexual couples to marry	-y	0.42		-y	0.49
+q24	Women should be free to decide on matters of abortion	-y	0.333		-y	0.392
+q25	The recreational use of cannabis should be legal	-y	0.341		-y	0.377
+q26	Islam is a threat to the values of Italy	y	0.397		y	0.457
+q27	If born in Italy, the children of immigrants should receive Italian citizenship	-y	0.368		-y	0.423
+q28	Political parties should be financed by public money	0			0	
+q29	Private schools should receive a contribution from the state	0			0	
+q30	Political institutions should monitor the activities of the judiciary	0			0	
+		Overall scale scalability coefficient H	0.331		Overall scale scalability coefficient H	0.421

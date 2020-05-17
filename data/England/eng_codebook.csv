@@ -1,0 +1,215 @@
+supplementary_question_id	supplementary_answer_id	supplementary_question_body	english
+1	1	Which party do you feel closest to?	Conservative
+	2		Labour
+	3		Liberal Democrats
+	4		Green
+	5		UKIP
+	6		BNP
+	7		Respect
+	8		Other
+	9		None
+	10		I prefer not to say
+2	11	In the European elections, which party do you intend to vote for?	Conservative
+	12		Labour
+	13		LibDems
+	14		Green
+	15		UKIP
+	16		BNP
+	17		Other
+	18		Undecided
+	19		I do not intend to vote
+	20		I prefer not to say
+3	21	What is the main reason for voting for your party of choice?	The party is more competent
+	22		The ideas of the party are closest to my own
+	23		The party helps people like me
+	24		My friends and family support the party
+	25		I like the leader(s) of the party
+	26		Other
+	27		I will not vote
+	28		I prefer not to say
+4	29	In the last national election that took place in 2010, which party did you vote for?	I did not vote
+	30		I spoiled my ballot paper
+	31		I was not eligible to vote
+	32		I do not remember
+	33		Conservative
+	34		Labour
+	35		Liberal Democrats
+	36		Green
+	37		UKIP
+	38		BNP
+	39		Respect
+	40		Other
+	41		I prefer not to say
+5	42	If there were a national election tomorrow, which party would you vote for?	Conservative
+	43		Labour
+	44		Liberal Democrats
+	45		Green
+	46		UKIP
+	47		BNP
+	48		Respect
+	49		Other
+	50		Undecided
+	51		I would not vote
+	52		I prefer not to say
+6	1	I am a citizen of...	I prefer not to say
+	2		Austria
+	3		Belgium
+	4		Bulgaria
+	5		Croatia
+	6		Cyprus
+	7		Czech republic
+	8		Denmark
+	9		Estonia
+	10		Finland
+	11		France
+	12		Germany
+	13		Greece
+	14		Hungary
+	15		Ireland
+	16		Italy
+	17		Latvia
+	18		Lithuania
+	19		Luxembourg
+	20		Malta
+	21		Netherlands
+	22		Poland
+	23		Portugal
+	24		Romania
+	25		Slovakia
+	26		Slovenia
+	27		Spain
+	28		Sweden
+	29		United Kingdom
+	30		I am a citizen of another country
+	31		I am not a citizen of any country
+7	84	Which region of the country are you entitled to vote in?	I prefer not to say
+	85		I am not entitled to vote
+	86		London
+	87		Southeast England
+	88		Southwest England
+	89		The East Midlands
+	90		The West Midlands
+	91		East Anglia
+	92		Eastern England
+	93		Northeast England
+	94		Northwest England
+8	95	Gender	Female
+	96		Male
+	97		I prefer not to say
+9	98	Year of birth	I prefer not to say
+10	190	Education	I prefer not to say
+	191		I did not complete secondary school (to age 16)
+	192		Secondary school (to age 16)
+	193		Further education (to age 18)
+	194		Technical/Vocational education
+	195		University education (degree)
+	196		Postgraduate education
+11	197	To what extent are you interested in politics?	Very
+	198		Somewhat
+	199		Little
+	200		Not at all
+	201		I prefer not to say
+12	202	In what kind of settlement do you live?	In a large town or city
+	203		In the suburbs of a large town or city
+	204		In a small or middle-sized town
+	205		In a rural area or village
+	206		Other
+	207		I prefer not to say
+13	208	What is your current work situation?	Self-employed
+	209		Employed by someone else
+	210		Still in education
+	211		In military service
+	212		Housewife/househusband
+	213		Retired
+	214		Unemployed
+	215		Other
+	216		I prefer not to say
+14	217	How religious would you say you are?	0 Not at all religious
+	218		1
+	219		2
+	220		3
+	221		4
+	222		5
+	223		6
+	224		7
+	225		8
+	226		9
+	227		10 Very religious
+	228		I prefer not to say
+15	229	Do you belong to a religion or religious denomination? I am ...	A non-believer
+	230		An agnostic
+	231		Roman Catholic
+	232		Church of England
+	233		Methodist
+	234		Pentecostal
+	235		Baptist
+	236		Orthodox (Russian/Greek/etc.)
+	237		Jewish
+	238		Muslim
+	239		Hindu
+	240		Buddhist
+	241		Other
+	242		I prefer not to say
+16	243	During the last twelve months have you taken part in a public demonstration	Yes
+	244		No
+	245		I prefer not to say
+17	246	During the last twelve months have you contacted an elected official	Yes
+	247		No
+	248		I prefer not to say
+18	249	During the last twelve months have you played an active role in a political party or action group	Yes
+	250		No
+	251		I prefer not to say
+19	252	During the last twelve months have you signed a petition online or offline	Yes
+	253		No
+	254		I prefer not to say
+20	255	During the last twelve months have you boycotted a product	Yes
+	256		No
+	257		I prefer not to say
+			
+			
+User Placement of Parties			
+SL1_Conservatives	Conservatives		
+SL1_Labour	Labour		
+SL1_LibDems	Liberal Democrats		
+SL1_Greens	Greens		
+SL1_UKIP	UKIP		
+			
+Probability of Voting for Parties			
+DD_Conservatives	Conservatives		
+DD_Labour	Labour		
+DD_LibDems	Liberal Democrats		
+DD_Greens	Greens		
+DD_UKIP	UKIP		
+			
+			
+30 Attitude Items			
+1	The United Kingdom should never adopt the Euro		
+2	A single member state should be able to block a treaty change, even if all the other members states agree to it		
+3	The right of EU citizens to work in the United Kingdom should be restricted		
+4	There should be a common EU foreign policy even if this limits the capacity of the United Kingdom to act independently		
+5	The EU should redistribute resources from richer to poorer EU regions		
+6	Overall, EU membership has been a bad thing for the United Kingdom		
+7	EU treaties should be decided by Westminster rather than by citizens in a referendum.		
+8	The EU should impose economic sanctions on Russia, even if this jeopardises gas supplies to EU countries		
+9	The United Kingdom should remain within the European Union.		
+10	The United Kingdom should hold an in or out referendum on EU membership as soon as possible.		
+11	Free market competition makes the health care system function better		
+12	The number of public sector employees should be reduced		
+13	The state should intervene as little as possible in the economy		
+14	Wealth should be redistributed from the richest people to the poorest		
+15	Cutting government spending is a good way to solve the economic crisis		
+16	It should be easy for companies to fire people		
+17	External loans from institutions such as the IMF are a good solution to crisis situations.		
+18	When a state rescues a bank it should take control over it		
+19	The top rate of income tax should be reduced further.		
+20	The government should go ahead with the exploitation of underground shale gas (fracking).		
+21	Immigrants must adapt to the values and culture of the United Kingdom		
+22	Restrictions on citizen privacy are acceptable in order to combat crime		
+23	To maintain public order, governments should be able to restrict demonstrations		
+24	Less serious crimes should be punished with community service, not imprisonment		
+25	Same sex couples should enjoy the same rights as heterosexual couples to marry		
+26	Women should be free to decide on matters of abortion		
+27	The recreational use of cannabis should be legal		
+28	Islam is a threat to the values of the United Kingdom		
+29	The United Kingdom should welcome a larger number of asylum seekers from war-torn countries.		
+30	The United Kingdom should be allowed to set quotas on the number of EU immigrants entering the country.		

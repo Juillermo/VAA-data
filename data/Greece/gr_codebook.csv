@@ -1,0 +1,209 @@
+supplementary_question_id	supplementary_answer_id	supplementary_question_body	supplementary_question_body_ελληνικά	ελληνικά	english
+1	1	Which party do you feel closest to?	Σε ποιο κόμμα νιώθετε πιο κοντά;	Νέα Δημοκρατία	New Democracy
+	2			ΣΥΡΙΖΑ	SYRIZA
+	3			ΠΑΣΟΚ	PASOK
+	4			ΑΝΕΛ	ANEL
+	5			ΚΚΕ	KKE
+	6			Χρυσή Αυγή	Golden Dawn
+	7			ΔΗΜΑΡ	DIMAR
+	8			Το Ποτάμι	To Potami
+	9			Οικολόγοι-Πράσινοι	Greens
+	10			Δράση	Drassi
+	11			Άλλο κόμμα	Other
+	12			Κανένα κόμμα	None
+	13			Προτιμώ να μην απαντήσω	I prefer not to say
+2	14	How do you intend to vote in the upcoming European elections?	Ποιο κόμμα προτίθεστε να ψηφίσετε στις Ευρωεκλογές;	Νέα Δημοκρατία	ND
+	15			ΣΥΡΙΖΑ	Syriza
+	16			Ελιά	Elia
+	17			ΑΝΕΛ	ANEL
+	18			ΚΚΕ	KKE
+	19			Χρυσή Αυγή	GD
+	20			ΔΗΜΑΡ	DIMAR
+	21			Το Ποτάμι	Potami
+	22			Οικολόγοι-Πράσινοι	Greens
+	23			Δράση	Drassi
+	24			Άλλο κόμμα	Other
+	25			Είμαι αναποφάσιστος	I am undecided
+	26			Δεν θα ψηφίσω	I will not vote
+	27			Προτιμώ να μην απαντήσω	I prefer not to say
+3	28	What is the main reason for voting for your party of choice?	Ποιος είναι ο κύριος λόγος για τον οποίο ψηφίζετε κάποιο κόμμα;	Το κόμμα είναι ικανότερο από τα υπόλοιπα	The party is more competent
+	29			Η ιδεολογία του κομματος είναι πιο κοντά στη δική μου	The ideas of the party are closest to my own
+	30			Το κόμμα βοηθάει ανθρώπους σαν εμένα	The party helps people like me
+	31			Η οικογένεια ή οι φίλοι μου υποστηρίζουν το κόμμα αυτό	My friends and family support the party
+	32			Είμαι ευχαριστημένος με την ηγεσία του κόμματος	I like the leader(s) of the party
+	33			Άλλος λόγος	Other
+	34			Δεν θα ψηφίσω	I will not vote
+	35			Προτιμώ να μην απαντήσω	I prefer not to say
+4	36	In the last national election that took place in 2011, which party did you vote for?	Στις τελευταίες εθνικές εκλογές του Ιουνίου του 2012, ποιο κόμμα ψηφίσατε;	Δεν ψήφισα	I did not vote
+	37			Ψήφισα λευκό/άκυρο	I voted blank
+	38			Δεν είχα δικαίωμα ψήφου	I was not eligible to vote
+	39			Δεν θυμάμαι	I do not remember
+	40			Νέα Δημοκρατία	New Democracy
+	41			ΣΥΡΙΖΑ	SYRIZA
+	42			ΠΑΣΟΚ	PASOK
+	43			ΑΝΕΛ	ANEL
+	44			ΚΚΕ	KKE
+	45			Χρυσή Αυγή	Golden Dawn
+	46			ΔΗΜΑΡ	DIMAR
+	47			Οικολόγοι-Πράσινοι	Greens
+	48			Δράση	Drassi
+	49			Άλλο κόμμα	Other
+	50			Προτιμώ να μην απαντήσω	I prefer not to say
+5	51	If there were a national election tomorrow, which party would you vote for?	Αν πραγματοποιούνταν αύριο εθνικές εκλογές, ποιο κόμμα θα ψηφίζατε;	Νέα Δημοκρατία	New Democracy
+	52			ΣΥΡΙΖΑ	SYRIZA
+	53			ΠΑΣΟΚ	PASOK
+	54			ΑΝΕΛ	ANEL
+	55			ΚΚΕ	KKE
+	56			Χρυσή Αυγή	Golden Dawn
+	57			ΔΗΜΑΡ	DIMAR
+	58			Το Ποτάμι	To Potami
+	59			Οικολόγοι-Πράσινοι	Greens
+	60			Δράση	Drassi
+	61			Άλλο κόμμα	Other
+	62			Είμαι αναποφάσιστος	I am undecided
+	63			Δεν θα ψήφιζα	I would not vote
+	64			Προτιμώ να μην απαντήσω	I prefer not to say
+6	1	I am a citizen of...	Είμαι κάτοικος της παρακάτω χώρας:	I prefer not to say	
+	2			Austria	
+	3			Belgium	
+	4			Bulgaria	
+	5			Croatia	
+	6			Cyprus	
+	7			Czech republic	
+	8			Denmark	
+	9			Estonia	
+	10			Finland	
+	11			France	
+	12			Germany	
+	13			Greece	
+	14			Hungary	
+	15			Ireland	
+	16			Italy	
+	17			Latvia	
+	18			Lithuania	
+	19			Luxembourg	
+	20			Malta	
+	21			Netherlands	
+	22			Poland	
+	23			Portugal	
+	24			Romania	
+	25			Slovakia	
+	26			Slovenia	
+	27			Spain	
+	29			United Kingdom	
+	30			Είμαι κάτοικος άλλης χώρας	
+	31			Είμαι άπατρις	
+7	95	Which region of the country are you voting in?	Σε ποια εκλογική περιφέρεια ψηφίζετε;	Προτιμώ να μην απαντήσω	I prefer not to say
+	96			Δεν δικαιούμαι να ψηφίσω	I am not entitled to vote
+	97			Ανατολική Μακεδονία και Θράκη	East Macedonia and Thrace
+	98			Αττική	Attica
+	99			Βόρειο Αιγαίο	Northern Aegean
+	100			Δυτική Ελλάδα	West Greece
+	101			Δυτική Μακεδονία	West Macedonia
+	102			Ήπειρος	Epirus
+	103			Θεσσαλία	Thessaly
+	104			Ιόνιοι Νήσοι	Ionian Islands
+	105			Κεντρική Μακεδονία	Central Macedonia
+	106			Κρήτη	Crete
+	107			Νότιο Αιγαίο	South Aegean
+	108			Πελοπόννησος	Peoloponnese
+	109			Στερεά Ελλάδα	Central Greece
+8	110	Gender	Φύλο :	Γυναίκα	Female
+	111			Άνδρας	Male
+	112			Προτιμώ να μην απαντήσω	I prefer not to say
+9	98	Year of birth	Έτος Γέννησης :	Προτιμώ να μην απαντήσω	I prefer not to say
+10	205	Education	Εκπαιδευτικό Επίπεδο :	Προτιμώ να μην απαντήσω	I prefer not to say
+	206			Δεν έχω ολοκληρώσει το Δημοτικό	I did not complete Basic education
+	207			Γυμνάσιο	Basic Education
+	208			Λύκειο	Secondary Education
+	209			Τεχνικό Λύκειο/ Επαγγελματική σχολή	Technical/Vocational education
+	210			Πανεπιστήμιο	Higher Education (Bachelor degree or equivalent)
+	211			Μεταπτυχιακή εκπαίδευση	Postgraduate education
+11	212	To what extent are you interested in politics?	Σε τι βαθμό θα λέγατε πως ενδιαφέρεστε για την πολιτική;	Πολύ	Very
+	213			Αρκετά	Somewhat
+	214			Ελάχιστα	Little
+	215			Καθόλου	Not at all
+	216			Προτιμώ να μην απαντήσω	I prefer not to say
+12	217	What kind of settlement do you live in?	Πώς θα χαρακτηρίζατε την περιοχή που μένετε;	Μεγάλη πόλη	In a large town or city
+	218			Περίχωρα μεγάλης πόλης	In the suburbs of a large town or city
+	219			Μικρή ή μεσαίου μεγέθους πόλη	In a small or middle-sized town
+	220			Αγροτική περιοχή ή χωριό	In a rural area or village
+	221			Άλλο	Other
+	222			Προτιμώ να μην απαντήσω	I prefer not to say
+13	223	What is your current work situation?	Ποια είναι η τωρινή, επαγγελματική σας κατάσταση;	Ελεύθερος επαγγελματίας	Self-employed
+	224			Ετεροαπασχολούμενος	Employed by someone else
+	225			Σε εκπαίδευση	Still in education
+	226			Σε στρατιωτική θητεία	In military service
+	227			Οικιακά	Housewife/househusband
+	228			Συνταξιούχος	Retired
+	229			Άνεργος	Unemployed
+	230			Άλλο	Other
+	231			Προτιμώ να μην απαντήσω	I prefer not to say
+14	232	How religious would you say you are?	Πόσο κοντά με τη θρησκεία σας νιώθετε;	0 Πολύ κοντά	0 Not at all religious
+	233			1	1
+	234			2	2
+	235			3	3
+	236			4	4
+	237			5	5
+	238			6	6
+	239			7	7
+	240			8	8
+	241			9	9
+	242			10 Καθόλου κοντά	10 Very religious
+	243			Προτιμώ να μην απαντήσω	I prefer not to say
+					
+					
+User Placement of Parties					
+SL1_ND	Νέα Δημοκρατία 				
+SL1_Syriza	ΣΥΡΙΖΑ 				
+SL1_Elia	Ελιά 				
+SL1_ANEL	ΑΝΕΛ 				
+SL1_GD	Χρυσή Αυγή 				
+SL1_KKE	ΚΚΕ 				
+SL1_Potami	Το Ποτάμι 				
+					
+					
+Probability of Voting for Parties					
+DD_ND	Νέα Δημοκρατία 				
+DD_Syriza	ΣΥΡΙΖΑ 				
+DD_Elia	Ελιά 				
+DD_ANEL	ΑΝΕΛ 				
+DD_GD	Χρυσή Αυγή 				
+DD_KKE	ΚΚΕ 				
+DD_DIMAR	ΔΗΜΑΡ 				
+DD_Potami	Το Ποτάμι 				
+DD_Greens	Οικολόγοι-Πράσινοι 				
+DD_Drassi	Δράση				
+					
+					
+30 Attitude Items					
+1	Η Ελλάδα θα πρέπει να εγκαταλείψει το Ευρώ.	Greece should leave the Euro			
+2	Ένα κράτος-μέλος της Ευρωπαϊκής Ένωσης πρέπει να μπορεί να μπλοκάρει αλλαγές σε ευρωπαϊκή συνθήκη, ακόμα και αν όλα τα υπόλοιπα κράτη-μέλη εγκρίνουν τις αλλαγές	A single member state should be able to block a treaty change, even if all the other members states agree to it			
+3	Το δικαίωμα των πολιτών της Ευρωπαϊκής Ένωσης να εργάζονται στην Ελλάδα θα πρέπει να περιοριστεί.	The right of EU citizens to work in Greece should be restricted			
+4	Η Ευρωπαϊκή Ένωση πρέπει να έχει κοινή εξωτερική πολιτική έστω κι αν αυτό περιορίζει την ικανότητα της Ελλάδας να δράσει ανεξάρτητα	There should be a common EU foreign policy even if this limits the capacity of Greece to act independently			
+5	Η Ευρωπαϊκή Ένωση πρέπει να ανακατανέμει πόρους από τις πλούσιες στις φτωχές περιοχές της	The EU should redistribute resources from richer to poorer EU regions			
+6	Συνολικά, η συμμετοχή στην Ευρωπαϊκή Ένωση είναι επιζήμια για την Ελλάδα	Overall, EU membership has been a bad thing for Greece			
+7	Οι συνθήκες της Ευρωπαϊκής Ένωσης θα πρέπει να εγκρίνονται από τη Βουλή και όχι από τους πολίτες μέσω δημοψηφισμάτων.	EU treaties should be decided by Greek parliament rather than by citizens in a referendum.			
+8	Θα πρέπει να επιβληθούν οικονομικές κυρώσεις στην Ρωσία, ακόμα και αν αυτό θέτει σε κίνδυνο την προμήθεια φυσικού αερίου στις χώρες της Ευρωπαϊκής Ένωσης.	The EU should impose economic sanctions on Russia, even if this jeopardises gas supplies to EU countries			
+9	Η Ευρωπαϊκή ενοποίηση έχει ήδη προχωρήσει πολύ	European integration has gone too far			
+10	Για την καταπολέμηση της ανεργίας, οι εργαζόμενοι θα πρέπει να αποδεχτούν την υπογραφή ατομικών συμβάσεων.	To combat unemployment, workers must accept signing individual contracts			
+11	Ο ελεύθερος ανταγωνισμός στην παροχή υπηρεσιών υγείας συμβάλλει σε πιο αποτελεσματική λειτουργία του συστήματος υγείας	Free market competition makes the health care system function better			
+12	Ο αριθμός των δημοσίων υπαλλήλων πρέπει να μειωθεί.	The number of public sector employees should be reduced			
+13	Το κράτος θα πρέπει να παρεμβαίνει όσο το δυνατόν λιγότερο στην οικονομία.	The state should intervene as little as possible in the economy			
+14	Ο πλούτος πρέπει να ανακατανέμεται από τους πλούσιους προς τους φτωχότερους ανθρώπους	Wealth should be redistributed from the richest people to the poorest			
+15	Ο περιορισμός των κρατικών δαπανών είναι η καλύτερη λύση για να αντιμετωπιστεί η οικονομική κρίση	Cutting government spending is a good way to solve the economic crisis			
+16	Οι επιχειρήσεις πρέπει να έχουν ευχέρεια να απολύουν υπαλλήλους	It should be easy for companies to fire people			
+17	Ο εξωτερικός δανεισμός από θεσμούς, όπως το ΔΝΤ, είναι μια καλή λύση στο πρόβλημα της κρίσης.	External loans from institutions such as the IMF are a good solution to crisis situations.			
+18	Θα πρέπει να μειωθεί η φορολογία των μεγάλων επιχειρήσεων προκειμένου να αποτραπεί η μεταφορά τους σε γειτονικές χώρες.	Taxes on large corporations should be decreased to prevent them from moving to neighbouring countries			
+19	Η δημόσια ακίνητη περιουσία που παραμένει ανεκμετάλλευτη θα πρέπει να πωληθεί.	State property that remains unexploited should be sold			
+20	Η εξόρυξη και εκμετάλλευση του ορυκτού πλούτου της χώρας θα βοήθήσει στην ανάπτυξη και γι'αυτό θα πρέπει να συντελεστεί.	To boost economic growth, the mining and exploitation of the mineral wealth in the country should take place 			
+21	Οι μετανάστες θα πρέπει να προσαρμόζονται στις αξίες και στην κουλτούρα της Ελλάδας.	Immigrants must adapt to the values and culture of Greece			
+22	Περιορισμοί στην ιδιωτικότητα των πολιτών είναι αποδεκτοί προκειμένου να αντιμετωπιστεί η εγκληματικότητα.	Restrictions on citizen privacy are acceptable in order to combat crime			
+23	Για λόγους δημόσιας τάξης, οι κυβερνήσεις πρέπει να έχουν δυνατότητα να περιορίσουν τις διαδηλώσεις	To maintain public order, governments should be able to restrict demonstrations			
+24	Οι λιγότερο σοβαρές αξιόποινες πράξεις πρέπει να τιμωρούνται με κοινωνική εργασία, και όχι με φυλάκιση.	Less serious crimes should be punished with community service, not imprisonment			
+25	Το δικαίωμα του γάμου μεταξύ ατόμων ιδίου φύλου θα πρέπει να αναγνωρίζεται όπως συμβαίνει και με τα ζευγάρια διαφορετικού φύλου.	Same sex couples should enjoy the same rights as heterosexual couples to marry			
+26	Οι γυναίκες πρέπει να είναι ελεύθερες να αποφασίζουν οι ίδιες για ζητήματα αμβλώσεων	Women should be free to decide on matters of abortion			
+27	Η χρήση ινδικής κάνναβης θα πρέπει να είναι νόμιμη.	The recreational use of cannabis should be legal			
+28	Τα παιδιά μεταναστών που έχουν γεννηθεί στην Ελλάδα θα πρέπει να έχουν το δικαίωμα να πάρουν την ελληνική ιθαγένεια.	The immigrants' children that have been born in Greece should have the right to obtain the Greek citizenship			
+29	Το Ισλάμ είναι μια απειλή για τις αξίες των Ελλήνων.	Islam is a threat to the values of Greece			
+30	Οι πιστοί θρησκειών, διαφορετικών από τη χριστιανική, πρέπει να έχουν το δικαίωμα να φτιάξουν τους δικούς τους χώρους λατρείας στην Ελλάδα.	Religious believers of faiths other than Christian, should have the right to build their own places of worship in Greece			
