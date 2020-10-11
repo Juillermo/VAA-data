@@ -32,7 +32,7 @@ The code is implemented in python 3.7 and requires the following packages:
 We have performed our experiments on the data from two different VAAs: the EUVox2014, a VAA released for the 2014 European Elections; and aquienvoto.org, a national VAA released for the 2019 Spanish elections.
 
 ### EUVox2014
-> Mendez, F. University of Zürich. (2018). EUvox2014: Voting Advice Application data for the 2014 European Parliament elections (Version: 1.0.0). , DOI: https://doi.org/10.7802/1750, url: https://doi.org/10.7802/1750.
+> Mendez, F. University of Zürich. (2018). EUvox2014: Voting Advice Application data for the 2014 European Parliament elections (Version: 1.0.0). , DOI: https://doi.org/10.7802/1750.
 
 License: [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
